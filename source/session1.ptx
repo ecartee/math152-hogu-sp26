@@ -2,20 +2,19 @@
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <docinfo>
-
     <document-id>authorslastnamelowercase-ShortTitleCamelCase</document-id>
-
+    <brandlogo source="MLClogo.png" url="https://mlc.tamu.edu/"/>
     <macros>\newcommand{\foo}{b^{ar}}</macros>
     <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
   </docinfo>
 
-  <article xml:id="shorttitlelowercase">
+  <article xml:id="session1wks">
     <title>MATH xxx Hands-On, Grades Up Session #x (Sections x-x)</title>
 
     
 <!--START TYPING CONTENT FOR SESSION BELOW HERE-->
 <worksheet>
-  <title>Getting Warmed Up and In the Rigth Mindset</title>
+  <title>Getting Warmed Up and In the Right Mindset</title>
   <exercise workspace="1 in">
     <statement>
       <p>
@@ -31,10 +30,42 @@
 
 <worksheet>
  <title>Let's Get Our Hands On</title> 
+ <image width="20%">
+    <shortdescription>
+      This is an image
+    </shortdescription>
+    <latex-image>
+      \begin{tikzpicture}
+        \draw (0,0) rectangle (1,1);
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+    <exercise workspace="1 in">
+      <statement>
+        <p>
+          Explain the meaning of <m>\displaystyle\lim_{x \to 3} f(x) = -2</m>.
+        </p>
+      </statement>
+    </exercise>  
 </worksheet>
   
 <worksheet>
  <title>Now Grades Go Up</title> 
+ <exercise workspace ="1 in">
+  <statement>
+    <p>
+      The mathematical notation <m>\displaystyle\lim \limits_{x \rightarrow 5} f(x)</m> means <m>\underline{ \qquad\qquad}</m>
+        <ol marker="(a)">
+          <li> <p>we need to find the value of the function  at <m>x=5</m>.</p> </li>
+          <li> <p> we need to investigate the <m>y</m>-values of <m>f(x)</m> as <m>x</m> gets very near <m>x=5</m> from both the left and right sides of <m>x=5</m>, 
+            but not necessarily at <m>x=5</m>.</p> </li>
+          <li> <p>we need to find the horizontal asymptotes. </p> </li>
+          <li> <p> we need to find the instantaneous rate of change.</p> </li>
+          <li> <p> we need to investigate the <m>y</m>-values as we approach <m>x=5</m> only on the right side.</p> </li>
+        </ol>
+    </p>
+  </statement>
+ </exercise>
 </worksheet>
 
   </article>
