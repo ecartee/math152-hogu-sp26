@@ -6,6 +6,8 @@
     </source>
 
     <common>
+        <tableofcontents level="0"/>
+        
         <!-- When writing an article for a specific journal, you can   -->
         <!-- specify the name of the journal to get appropriate latex. -->
         <!-- See the guide for a list of valid names:
@@ -13,4 +15,7 @@
 
         <!--<journal name="ams" /> -->
     </common>
+    <html>
+        <css theme="default-modern" primary-color="#500000"/>
+    </html>
 </publication>
