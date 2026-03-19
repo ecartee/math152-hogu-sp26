@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <document-id>authorslastnamelowercase-ShortTitleCamelCase</document-id>
+    <brandlogo source="MLClogo.png" url="https://mlc.tamu.edu/"/>
+    <macros>\newcommand{\foo}{b^{ar}}</macros>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+  <book xml:id="session1wks">
+<worksheet xml:id="basics-sample-worksheet"> 
+    <title>A Skeletal Worksheet</title> 
+    <objectives> 
+        <ul> 
+            <li>Something really cool</li> 
+            <li>A less important thing you 'll learn</li> 
+        </ul> 
+    </objectives> 
+    <introduction> <p>It can be helpful to say what the point of the worksheet is.</p> </introduction>
+</worksheet>
+</book>
+</pretext>

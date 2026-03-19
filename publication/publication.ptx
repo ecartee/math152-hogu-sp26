@@ -7,7 +7,12 @@
 
     <common>
         <tableofcontents level="0"/>
-        
+        <worksheet>
+            <first-page-header right="142 HOGU"/>
+            <running-header right="142 HOGU"/>
+            <first-page-footer left="Fall 2026"/>
+            <running-footer left="Fall 2026"/> 
+        </worksheet>
         <!-- When writing an article for a specific journal, you can   -->
         <!-- specify the name of the journal to get appropriate latex. -->
         <!-- See the guide for a list of valid names:
@@ -16,6 +21,9 @@
         <!--<journal name="ams" /> -->
     </common>
     <html>
-        <css theme="default-modern" primary-color="#500000"/>
+        <css theme="greeley" primary-color="#500000"/>
     </html>
+    <numbering>
+        <worksheet level ="0"/>
+    </numbering>
 </publication>
