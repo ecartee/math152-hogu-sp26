@@ -8,10 +8,10 @@
     <common>
         <tableofcontents level="0"/>
         <worksheet>
-            <first-page-header right="142 HOGU"/>
-            <running-header right="142 HOGU"/>
-            <first-page-footer left="Fall 2026"/>
-            <running-footer left="Fall 2026"/> 
+            <first-page-header right="142 HOGU, Fall 2026"/>
+            <running-header right="142 HOGU, Fall 2026"/>
+            <first-page-footer left="&#xA9; 2026 TAMU Math Learning Center"/>
+            <running-footer left="&#xA9; 2026 TAMU Math Learning Center"/> 
         </worksheet>
         <!-- When writing an article for a specific journal, you can   -->
         <!-- specify the name of the journal to get appropriate latex. -->
@@ -23,7 +23,7 @@
     <html>
         <css theme="greeley" primary-color="#500000"/>
     </html>
-    <numbering>
-        <worksheet level ="0"/>
-    </numbering>
+    <latex>
+        <insertions pagebreaks="break-here"/>
+    </latex>
 </publication>
