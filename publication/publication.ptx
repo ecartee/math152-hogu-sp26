@@ -20,6 +20,9 @@
 
         <!--<journal name="ams" /> -->
     </common>
+    <numbering>
+        <divisions level="0"/>
+    </numbering>
     <html>
         <css theme="greeley" primary-color="#500000"/>
     </html>

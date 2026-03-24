@@ -22,7 +22,7 @@
       For additional practice problems and explanations, refer to the Math 142 textbook which is free and can be downloaded as a PDF 
       at <url href="https://oaktrust.library.tamu.edu/items/03980291-5e85-4d2e-a742-961ac49666aa"> Texas A&amp;M The OAKTrust Digital Repository </url>.
     </p>
-    <paragraphs>
+    <exercises>
       <title>Getting Warmed Up and In the Right Mindset</title>
     <exercise workspace="1 in">
       <statement><!-- #1 -->
@@ -61,8 +61,8 @@
         </p>
       </statement>
     </exercise>
-  </paragraphs>
-<paragraphs>
+  </exercises>
+<exercises>
   <title>Let's Get Our Hands On</title><!-- SECTION 2-->
     <exercise workspace="3 in" number="1">
       <statement><!-- #1 -->
@@ -170,8 +170,8 @@
         <p> Jenn is trying to find <m>\displaystyle\lim_{x \rightarrow \infty} f(x)</m> given  <m>f(x) = \frac{12+4x^7+x}{-19x^6+2x^2-5x^7}</m>. </p>
       </statement>
     </exercise> 
-  </paragraphs>
-  <paragraphs>
+  </exercises>
+  <exercises>
  <title>Now Grades Go Up</title><!-- SECTION #3 -->
  <exercise workspace ="1 in" number="1">
   <statement><!-- #1 -->
@@ -219,7 +219,7 @@
     </p>
   </statement>
  </exercise>
- </paragraphs>
+ </exercises>
 </worksheet>
 
   </article>
