@@ -1,22 +1,157 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "shorttitlelowercase",
+  "id": "session1wks",
   "level": "1",
-  "url": "#shorttitlelowercase",
+  "url": "#session1wks",
   "type": "Article",
   "number": "",
-  "title": "MATH xxx Hands-On, Grades Up Session #x (Sections x-x)",
-  "body": " MATH xxx Hands-On, Grades Up Session #x (Sections x-x)    Getting Warmed Up and In the Rigth Mindset    A bag contains the same size marbles in three different colors: red, blue, and white. The bag has 14 identical red marbles, 12 identical blue marbles, and 20 identical white marbles (all the same size). One marble is drawn from the bag and the color of the marble is noted. Let be the event the marble drawn is blue, the event the marble drawn is red, and W the event the marble drawn is white.      Let's Get Our Hands On    Now Grades Go Up   "
+  "title": "MATH 142 Hands-On, Grades Up",
+  "body": " MATH 142 Hands-On, Grades Up   For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.     Session #1 (Sections 1.1-1.3)  Directions: Answer each of the following as best you can. Feel free to discuss your thoughts about the questions with some peers around you. For additional practice problems and explanations, refer to the Math 142 textbook which is free and can be downloaded as a PDF at Texas A&M The OAKTrust Digital Repository .    Warm Up     Explain the meaning of .      If , then  .      If and , then  .      If and , then  .      If , what do we know about ?       Let Us Get Our Hands On     Complete the graph below so has the domain , , and .       Complete the tables below to estimate numerically. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).  Left-hand limit    Variable  Variable                      Right-hand limit    Variable  Variable                            Set up a table to estimate numerically. When creating your table, show at least three -values approaching from each side and their corresponding function values in the table. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).      Given the graph of below and , find .        Given         Find the following limits algebraically. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).      For each graph below, find the indicated limit.      Jenn is trying to find given .       Now Grades Go Up     The mathematical notation means    we need to find the value of the function at .    we need to investigate the -values of as gets very near from both the left and right sides of , but not necessarily at .    we need to find the horizontal asymptotes.    we need to find the instantaneous rate of change.    we need to investigate the -values as we approach only on the right side.         Find . If the limit does not exist, but has infinite behavior, use limit notation to describe the infinite behavior of the function as .            DNE, but has infinite behavior that can be described as .    DNE, but has infinite behavior that can be described as .              Find .        DNE              None of these.         "
 },
 {
-  "id": "shorttitlelowercase-2-2",
+  "id": "session1wks-3-3-2",
   "level": "2",
-  "url": "#shorttitlelowercase-2-2",
+  "url": "#session1wks-3-3-2",
   "type": "Worksheet Exercise",
-  "number": "1.1",
+  "number": "1",
   "title": "",
-  "body": "  A bag contains the same size marbles in three different colors: red, blue, and white. The bag has 14 identical red marbles, 12 identical blue marbles, and 20 identical white marbles (all the same size). One marble is drawn from the bag and the color of the marble is noted. Let be the event the marble drawn is blue, the event the marble drawn is red, and W the event the marble drawn is white.   "
+  "body": "  Explain the meaning of .   "
+},
+{
+  "id": "session1wks-3-3-3",
+  "level": "2",
+  "url": "#session1wks-3-3-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  If , then  .   "
+},
+{
+  "id": "session1wks-3-3-4",
+  "level": "2",
+  "url": "#session1wks-3-3-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  If and , then  .   "
+},
+{
+  "id": "session1wks-3-3-5",
+  "level": "2",
+  "url": "#session1wks-3-3-5",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  If and , then  .   "
+},
+{
+  "id": "session1wks-3-3-6",
+  "level": "2",
+  "url": "#session1wks-3-3-6",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  If , what do we know about ?   "
+},
+{
+  "id": "session1wks-3-4-2",
+  "level": "2",
+  "url": "#session1wks-3-4-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Complete the graph below so has the domain , , and .    "
+},
+{
+  "id": "session1wks-3-4-3",
+  "level": "2",
+  "url": "#session1wks-3-4-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Complete the tables below to estimate numerically. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).  Left-hand limit    Variable  Variable                      Right-hand limit    Variable  Variable                       "
+},
+{
+  "id": "session1wks-3-5-1",
+  "level": "2",
+  "url": "#session1wks-3-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Set up a table to estimate numerically. When creating your table, show at least three -values approaching from each side and their corresponding function values in the table. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).   "
+},
+{
+  "id": "session1wks-3-5-2",
+  "level": "2",
+  "url": "#session1wks-3-5-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Given the graph of below and , find .   "
+},
+{
+  "id": "session1wks-3-6-1",
+  "level": "2",
+  "url": "#session1wks-3-6-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Given    "
+},
+{
+  "id": "session1wks-3-7-1",
+  "level": "2",
+  "url": "#session1wks-3-7-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Find the following limits algebraically. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).   "
+},
+{
+  "id": "session1wks-3-7-2",
+  "level": "2",
+  "url": "#session1wks-3-7-2",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  For each graph below, find the indicated limit.   "
+},
+{
+  "id": "session1wks-3-7-3",
+  "level": "2",
+  "url": "#session1wks-3-7-3",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Jenn is trying to find given .   "
+},
+{
+  "id": "session1wks-3-8-2",
+  "level": "2",
+  "url": "#session1wks-3-8-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The mathematical notation means    we need to find the value of the function at .    we need to investigate the -values of as gets very near from both the left and right sides of , but not necessarily at .    we need to find the horizontal asymptotes.    we need to find the instantaneous rate of change.    we need to investigate the -values as we approach only on the right side.      "
+},
+{
+  "id": "session1wks-3-8-3",
+  "level": "2",
+  "url": "#session1wks-3-8-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find . If the limit does not exist, but has infinite behavior, use limit notation to describe the infinite behavior of the function as .            DNE, but has infinite behavior that can be described as .    DNE, but has infinite behavior that can be described as .           "
+},
+{
+  "id": "session1wks-3-8-4",
+  "level": "2",
+  "url": "#session1wks-3-8-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find .        DNE              None of these.      "
 }
 ]
 

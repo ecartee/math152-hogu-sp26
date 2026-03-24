@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: greeley                        *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MATH 142 Hands-On, Grades Up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="authorslastnamelowercase-ShortTitleCamelCase" class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mlc.tamu.edu/"><img src="external/MLCLOGO.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="session1wks.html"><span class="title">MATH 142 Hands-On, Grades Up</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button hidden" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\foo}{b^{ar}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar hidden"><nav id="ptx-toc" class="ptx-toc depth0"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="#session1wks-3" class="internal"><span class="title">Session #1 (Sections 1.1-1.3)</span></a></div></li></ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="article" id="session1wks"><section class="introduction" id="session1wks-2"><div class="para" id="session1wks-2-1">For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="worksheet" id="session1wks-3" data-margins="0.75in 0.75in 0.75in 0.75in" data-header-first-right="142 HOGU, Fall 2026" data-header-running-right="142 HOGU, Fall 2026" data-footer-first-left="© 2026 TAMU Math Learning Center" data-footer-running-left="© 2026 TAMU Math Learning Center"><h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Session #1 (Sections 1.1-1.3)</span><div class="print-links"><a href="?printpreview=session1wks-3" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<div class="para" id="session1wks-3-2">Directions: Answer each of the following as best you can. Feel free to discuss your thoughts about the questions with some peers around you. For additional practice problems and explanations, refer to the Math 142 textbook which is free and can be downloaded as a PDF at <a class="external" href="https://oaktrust.library.tamu.edu/items/03980291-5e85-4d2e-a742-961ac49666aa" target="_blank">Texas A&amp;M The OAKTrust Digital Repository</a>.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="onepage" id="session1wks-3-3"><section class="paragraphs" id="session1wks-3-3-1"><h3 class="heading"><span class="title">Warm Up.</span></h3>
+<div class="autopermalink" data-description="Paragraphs: Warm Up"><a href="#session1wks-3-3-1" title="Copy heading and permalink for Paragraphs: Warm Up" aria-label="Copy heading and permalink for Paragraphs: Warm Up">🔗</a></div></section><article class="exercise exercise-like" id="session1wks-3-3-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-3-2-1-1">Explain the meaning of <span class="process-math">\(\displaystyle\lim_{x \to 3} f(x) = -2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="5 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#session1wks-3-3-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-3-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-3-3-1-1">If <span class="process-math">\(\displaystyle\lim_{x \to 2} g(x) = 7\text{,}\)</span> then <span class="process-math">\(\displaystyle\lim_{x \to 2^-} g(x)\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#session1wks-3-3-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-3-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-3-4-1-1">If <span class="process-math">\(\displaystyle\lim_{x \to 8^-} h(x) = \frac{2}{3}\)</span> and <span class="process-math">\(\displaystyle\lim_{x \to 8^+} h(x) = -\frac{4}{3}\text{,}\)</span> then <span class="process-math">\(\displaystyle\lim_{x \to 8} h(x)\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#session1wks-3-3-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-3-5"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-3-5-1-1">If <span class="process-math">\(\displaystyle\lim_{x \to -6^-} p(x) = \sqrt{5}\)</span> and <span class="process-math">\(\displaystyle\lim_{x \to -6^+} p(x) = \sqrt{5}\text{,}\)</span> then <span class="process-math">\(\displaystyle\lim_{x \to -6} p(x)\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#session1wks-3-3-5" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-3-6"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-3-6-1-1">If <span class="process-math">\(\displaystyle\lim_{x \to 0^-} h(x) = e\text{,}\)</span> what do we know about <span class="process-math">\(\displaystyle\lim_{x \to 0} h(x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#session1wks-3-3-6" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div></article></section><section class="onepage" id="session1wks-3-4"><section class="paragraphs" id="session1wks-3-4-1"><h3 class="heading"><span class="title">Let Us Get Our Hands On.</span></h3>
+<div class="autopermalink" data-description="Paragraphs: Let Us Get Our Hands On"><a href="#session1wks-3-4-1" title="Copy heading and permalink for Paragraphs: Let Us Get Our Hands On" aria-label="Copy heading and permalink for Paragraphs: Let Us Get Our Hands On">🔗</a></div></section><article class="exercise exercise-like" id="session1wks-3-4-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-4-2-1-1">Complete the graph below so <span class="process-math">\(f(x)\)</span> has the domain <span class="process-math">\([-8,7]\text{,}\)</span> <span class="process-math">\(\displaystyle\lim_{x \rightarrow -4} f(x)=-2\text{,}\)</span> and <span class="process-math">\(\displaystyle\lim_{x \rightarrow 5^-} f(x)=9\text{.}\)</span> <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/M142_HOGU_session1_fig1.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#session1wks-3-4-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-4-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-4-3-1-1">Complete the tables below to estimate  <span class="process-math">\(\displaystyle\lim_{t \rightarrow 0} \frac{|t-5|}{t}\)</span> numerically. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary). <figure class="table table-like" id="session1wks-3-4-3-1-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Left-hand limit<div class="autopermalink" data-description="Table 1: Left-hand limit"><a href="#session1wks-3-4-3-1-1-2" title="Copy heading and permalink for Table 1: Left-hand limit" aria-label="Copy heading and permalink for Table 1: Left-hand limit">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Variable <span class="process-math">\(t\)</span>
+</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Variable <span class="process-math">\(f(t)\)</span>
+</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.01\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.001\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.0001\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure> <figure class="table table-like" id="session1wks-3-4-3-1-1-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Right-hand limit<div class="autopermalink" data-description="Table 2: Right-hand limit"><a href="#session1wks-3-4-3-1-1-3" title="Copy heading and permalink for Table 2: Right-hand limit" aria-label="Copy heading and permalink for Table 2: Right-hand limit">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Variable <span class="process-math">\(t\)</span>
+</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Variable <span class="process-math">\(f(t)\)</span>
+</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.01\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.001\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.0001\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="5 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#session1wks-3-4-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article></section><section class="onepage" id="session1wks-3-5"><article class="exercise exercise-like" id="session1wks-3-5-1"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-5-1-1-1">Set up a table to estimate <span class="process-math">\(\displaystyle \lim_{x \rightarrow -2} \frac{x^2-x-6}{(x+2)(x+7)}\)</span> numerically. When creating your table, show at least three <span class="process-math">\(x\)</span>-values approaching <span class="process-math">\(-2\)</span> from each side and their corresponding function values in the table. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#session1wks-3-5-1" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-5-2"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-5-2-1-1">Given the graph of <span class="process-math">\(f(x)\)</span> below and <span class="process-math">\(g(x)=\frac{10x-30}{x^2-x-6}\text{,}\)</span> find <span class="process-math">\(\displaystyle\lim_{x \rightarrow 3} \left( \frac{f(x)+5x}{2}+\sqrt{g(x)+14} \right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#session1wks-3-5-2" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article></section><section class="onepage" id="session1wks-3-6"><article class="exercise exercise-like" id="session1wks-3-6-1"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-6-1-1-1">Given <span class="process-math">\(f(x) = \{ 5^{4x-3} \text{ if } x \leq -5, \frac{x^2-x}{x^2+2x} \text{ if } x &gt; -5 \}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#session1wks-3-6-1" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div></article></section><section class="onepage" id="session1wks-3-7"><article class="exercise exercise-like" id="session1wks-3-7-1"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-7-1-1-1">Find the following limits algebraically. If the limit does not exist, state so and use limit notation to describe any infinite behavior. Round your answers to four decimal places (if necessary).<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#session1wks-3-7-1" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-7-2"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-7-2-1-1">For each graph below, find the indicated limit.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#session1wks-3-7-2" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-7-3"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="session1wks-3-7-3-1-1">Jenn is trying to find <span class="process-math">\(\displaystyle\lim_{x \rightarrow \infty} f(x)\)</span> given  <span class="process-math">\(f(x) = \frac{12+4x^7+x}{-19x^6+2x^2-5x^7}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#session1wks-3-7-3" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div></article></section><section class="onepage" id="session1wks-3-8"><section class="paragraphs" id="session1wks-3-8-1"><h3 class="heading"><span class="title">Now Grades Go Up.</span></h3>
+<div class="autopermalink" data-description="Paragraphs: Now Grades Go Up"><a href="#session1wks-3-8-1" title="Copy heading and permalink for Paragraphs: Now Grades Go Up" aria-label="Copy heading and permalink for Paragraphs: Now Grades Go Up">🔗</a></div></section><article class="exercise exercise-like" id="session1wks-3-8-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="session1wks-3-8-2-1-1">
+<div class="para">The mathematical notation <span class="process-math">\(\displaystyle\lim \limits_{x \rightarrow 5} f(x)\)</span> means <span class="process-math">\(\underline{ \qquad\qquad}\)</span>
+</div>
+<ol class="lower-alpha ol-marker-1" id="session1wks-3-8-2-1-1-3">
+<li id="session1wks-3-8-2-1-1-3-1">
+<div class="para" id="session1wks-3-8-2-1-1-3-1-1">we need to find the value of the function  at <span class="process-math">\(x=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-2-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#session1wks-3-8-2-1-1-3-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="session1wks-3-8-2-1-1-3-2">
+<div class="para" id="session1wks-3-8-2-1-1-3-2-1">we need to investigate the <span class="process-math">\(y\)</span>-values of <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\)</span> gets very near <span class="process-math">\(x=5\)</span> from both the left and right sides of <span class="process-math">\(x=5\text{,}\)</span> but not necessarily at <span class="process-math">\(x=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-2-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#session1wks-3-8-2-1-1-3-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="session1wks-3-8-2-1-1-3-3">
+<div class="para" id="session1wks-3-8-2-1-1-3-3-1">we need to find the horizontal asymptotes.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-2-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#session1wks-3-8-2-1-1-3-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="session1wks-3-8-2-1-1-3-4">
+<div class="para" id="session1wks-3-8-2-1-1-3-4-1">we need to find the instantaneous rate of change.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-2-1-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#session1wks-3-8-2-1-1-3-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+<li id="session1wks-3-8-2-1-1-3-5">
+<div class="para" id="session1wks-3-8-2-1-1-3-5-1">we need to investigate the <span class="process-math">\(y\)</span>-values as we approach <span class="process-math">\(x=5\)</span> only on the right side.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-2-1-1-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.e"><a href="#session1wks-3-8-2-1-1-3-5" title="Copy heading and permalink for Item 1.e" aria-label="Copy heading and permalink for Item 1.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#session1wks-3-8-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-8-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="session1wks-3-8-3-1-1">
+<div class="para">Find <span class="process-math">\(\displaystyle\lim_{x\rightarrow 2^-} \frac{3x^2}{x^2-4}\text{.}\)</span> If the limit does not exist, but has infinite behavior, use limit notation to describe the infinite behavior of the function as <span class="process-math">\(x \longrightarrow 2^-\text{.}\)</span>
+</div>
+<ol class="lower-alpha ol-marker-1" id="session1wks-3-8-3-1-1-3">
+<li id="session1wks-3-8-3-1-1-3-1">
+<div class="para" id="session1wks-3-8-3-1-1-3-1-1">
+<span class="process-math">\(\displaystyle \displaystyle {\lim_{x\rightarrow 2^-} \frac{3x^2}{x^2-4}}=3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-3-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#session1wks-3-8-3-1-1-3-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="session1wks-3-8-3-1-1-3-2">
+<div class="para" id="session1wks-3-8-3-1-1-3-2-1">
+<span class="process-math">\(\displaystyle \displaystyle{\lim_{x\rightarrow 2^-} \frac{3x^2}{x^2-4}}=-\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-3-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#session1wks-3-8-3-1-1-3-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="session1wks-3-8-3-1-1-3-3">
+<div class="para" id="session1wks-3-8-3-1-1-3-3-1">
+<span class="process-math">\(\displaystyle{\lim_{x\rightarrow 2^-} \frac{3x^2}{x^2-4}}\)</span> DNE, but has infinite behavior that can be described as <span class="process-math">\(\displaystyle{\lim_{x \rightarrow 2^-} f(x) \rightarrow -\infty}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-3-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#session1wks-3-8-3-1-1-3-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+<li id="session1wks-3-8-3-1-1-3-4">
+<div class="para" id="session1wks-3-8-3-1-1-3-4-1">
+<span class="process-math">\(\displaystyle{\lim_{x\rightarrow 2^-} \frac{3x^2}{x^2-4}}\)</span> DNE, but has infinite behavior that can be described as <span class="process-math">\(\displaystyle{\lim_{x \rightarrow 2^-} f(x) \rightarrow \infty}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-3-1-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.d"><a href="#session1wks-3-8-3-1-1-3-4" title="Copy heading and permalink for Item 2.d" aria-label="Copy heading and permalink for Item 2.d">🔗</a></div>
+</li>
+<li id="session1wks-3-8-3-1-1-3-5">
+<div class="para" id="session1wks-3-8-3-1-1-3-5-1">
+<span class="process-math">\(\displaystyle \displaystyle {\lim_{x\rightarrow 2^-} \frac{3x^2}{x^2-4}}=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-3-1-1-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.e"><a href="#session1wks-3-8-3-1-1-3-5" title="Copy heading and permalink for Item 2.e" aria-label="Copy heading and permalink for Item 2.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#session1wks-3-8-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="session1wks-3-8-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="session1wks-3-8-4-1-1">
+<div class="para">Find <span class="process-math">\(\displaystyle\lim \limits_{x \rightarrow 7} \frac{x^2-8x+7}{x-7}\text{.}\)</span>
+</div>
+<ol class="lower-alpha ol-marker-1" id="session1wks-3-8-4-1-1-2">
+<li id="session1wks-3-8-4-1-1-2-1">
+<div class="para" id="session1wks-3-8-4-1-1-2-1-1">
+<span class="process-math">\(\displaystyle 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-4-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#session1wks-3-8-4-1-1-2-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="session1wks-3-8-4-1-1-2-2">
+<div class="para" id="session1wks-3-8-4-1-1-2-2-1">DNE<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-4-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#session1wks-3-8-4-1-1-2-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
+</li>
+<li id="session1wks-3-8-4-1-1-2-3">
+<div class="para" id="session1wks-3-8-4-1-1-2-3-1">
+<span class="process-math">\(\displaystyle 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-4-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.c"><a href="#session1wks-3-8-4-1-1-2-3" title="Copy heading and permalink for Item 3.c" aria-label="Copy heading and permalink for Item 3.c">🔗</a></div>
+</li>
+<li id="session1wks-3-8-4-1-1-2-4">
+<div class="para" id="session1wks-3-8-4-1-1-2-4-1">
+<span class="process-math">\(\displaystyle 8\)</span><div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-4-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.d"><a href="#session1wks-3-8-4-1-1-2-4" title="Copy heading and permalink for Item 3.d" aria-label="Copy heading and permalink for Item 3.d">🔗</a></div>
+</li>
+<li id="session1wks-3-8-4-1-1-2-5">
+<div class="para" id="session1wks-3-8-4-1-1-2-5-1">None of these.<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-4-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.e"><a href="#session1wks-3-8-4-1-1-2-5" title="Copy heading and permalink for Item 3.e" aria-label="Copy heading and permalink for Item 3.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#session1wks-3-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1 in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#session1wks-3-8-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Session #1 (Sections 1.1-1.3)"><a href="#session1wks-3" title="Copy heading and permalink for Worksheet: Session #1 (Sections 1.1-1.3)" aria-label="Copy heading and permalink for Worksheet: Session #1 (Sections 1.1-1.3)">🔗</a></div></section><div class="autopermalink" data-description="Article: MATH 142 Hands-On, Grades Up"><a href="#session1wks" title="Copy heading and permalink for Article: MATH 142 Hands-On, Grades Up" aria-label="Copy heading and permalink for Article: MATH 142 Hands-On, Grades Up">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
