@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <!--<document-id>math152-hogu-session11</document-id>-->
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session11wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #11: Final Exam Review Part 1 -- Chapters 6 &amp; 7</title>
+
+      <!-- PAGE 1a: Getting Ready — technique matching (problems 1-5) -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <p>
+          <alert>Directions:</alert> Choose the integration technique that can be used to solve each of the following integrals.
+        </p>
+        <p>
+          <ol marker="I.">
+            <li><p>Integration by Parts</p></li>
+            <li><p>Partial Fractions</p></li>
+            <li><p>Trigonometric Substitution (e.g., <m>x = a\sin(\theta)</m>, etc.)</p></li>
+            <li><p><m>u</m>-substitution</p></li>
+            <li><p>Integration using Trigonometric Identities</p></li>
+          </ol>
+        </p>
+
+        <exercise workspace="0.8 in">
+          <statement><p><m>\displaystyle\int \frac{1}{4 + x^2}\,dx</m></p></statement>
+        </exercise>
+        <exercise workspace="0.8 in">
+          <statement><p><m>\displaystyle\int \frac{10}{(x-1)(x^2+9)}\,dx</m></p></statement>
+        </exercise>
+        <exercise workspace="0.8 in">
+          <statement><p><m>\displaystyle\int x^2 e^{-x}\,dx</m></p></statement>
+        </exercise>
+        <exercise workspace="0.8 in">
+          <statement><p><m>\displaystyle\int \frac{1}{16}x^3 \sin\!\left(x^4\right)\,dx</m></p></statement>
+        </exercise>
+        <exercise workspace="0.8 in">
+          <statement><p><m>\displaystyle\int \sin^4(x)\,dx</m></p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 1b: Getting Ready — true/false (problems 6-8) -->
+      <page>
+        <p><alert>Directions:</alert> Answer each of the following with <q>true</q> or <q>false</q>.</p>
+
+        <exercise workspace="0.8 in">
+          <statement><p><fillin/> <m>\displaystyle\int_{-1}^{1} \frac{1}{x^2}\,dx</m> is an improper integral.</p></statement>
+        </exercise>
+        <exercise workspace="0.8 in">
+          <statement><p><fillin/> <m>\displaystyle\int_{1}^{\infty} \frac{1}{x^{2p}}\,dx</m> converges for <m>p \geq \dfrac{1}{2}</m>.</p></statement>
+        </exercise>
+        <exercise workspace="0.8 in">
+          <statement><p><fillin/> The series <m>\displaystyle 7 - \frac{14}{3} + \frac{28}{9} - \frac{56}{27} + \frac{112}{81} - \frac{224}{243} + \cdots</m> converges.</p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Problem 1 -->
+      <page>
+        <assemblage>
+          <title>Hands-On</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+        <exercise number="1">
+          <introduction>
+            <p>Let <m>R</m> denote the region bounded by <m>y = e^x</m>, <m>y = e^{-x}</m> between <m>x = -1</m> and <m>x = 2</m>.</p>
+          </introduction>
+          <task workspace="3 in">
+            <statement><p>Sketch the region <m>R</m>.</p></statement>
+          </task>
+          <task workspace="2 in">
+            <statement><p>Set up the integral that gives the area of the region <m>R</m>.</p></statement>
+          </task>
+          <task workspace="2.5 in">
+            <statement><p>Find the area of the region <m>R</m>.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Problems 2-3 (work problems together) -->
+      <page>
+        <exercise workspace="4 in" number="2">
+          <statement>
+            <p>Suppose the <em>work</em> required to stretch a spring 4 meters beyond its natural length is 24 J. How much <em>force</em> would be required to hold the spring stretched 10 meters beyond its natural length?</p>
+          </statement>
+        </exercise>
+        <exercise workspace="4 in" number="3">
+          <statement>
+            <p>A 20 ft rope weighing 3 lb/ft hangs vertically from the edge of a roof. A 10 lb bucket is attached to the lower end of the rope. Find the work required to pull the rope and bucket to the roof.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Problem 4 -->
+      <page>
+        <exercise number="4">
+          <introduction>
+            <p>Let <m>R</m> denote the region bounded by <m>y = \ln(x)</m>, <m>y = 0</m>, and <m>x = 2</m>.</p>
+          </introduction>
+          <task workspace="2 in">
+            <statement><p>Sketch the region <m>R</m>.</p></statement>
+          </task>
+          <task workspace="1.75 in">
+            <statement><p>Use <alert>disks</alert> to setup the integral that gives the volume of the solid generated by rotating the region <m>R</m> about the <m>x</m>-axis. <alert>Do not evaluate the integral.</alert></p></statement>
+          </task>
+          <task workspace="1.75 in">
+            <statement><p>Use <alert>washers</alert> to setup the integral that gives the volume of the solid generated by rotating the region <m>R</m> about the line <m>x = 3</m>. <alert>Do not evaluate the integral.</alert></p></statement>
+          </task>
+          <task workspace="1.75 in">
+            <statement><p>Use <alert>shells</alert> to setup the integral that gives the volume of the solid generated by rotating the region <m>R</m> about the line <m>y = -2</m>. <alert>Do not evaluate the integral.</alert></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Problems 5-6 -->
+      <page>
+        <exercise workspace="4 in" number="5">
+          <statement>
+            <p>The tank in a shape of a hemisphere with radius 5 ft is full of water. Find the work done in pumping all the water to the top of the tank. Use the fact that water weighs 62.5 lb/ft<m>^3</m>.</p>
+          </statement>
+        </exercise>
+        <exercise workspace="4 in" number="6">
+          <statement>
+            <p>The base of a solid is the region bounded by the curve <m>y = 5 - x^2</m> and the <m>x</m>-axis. The cross sections of the solid are rectangles perpendicular to the <m>y</m>-axis with height equal to twice the base. Find the volume of this solid.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6a: Problems 7-8 (IBP + trig integral) -->
+      <page>
+        <exercise workspace="3.75 in" number="7">
+          <statement><p>Compute <m>\displaystyle\int x^2 e^{3x}\,dx</m></p></statement>
+        </exercise>
+        <exercise workspace="3.75 in" number="8">
+          <statement><p>Compute <m>\displaystyle\int \sin^6(x)\cos^3(x)\,dx</m></p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6b: Problem 9 (partial fractions) -->
+      <page>
+        <exercise workspace="7 in" number="9">
+          <statement><p>Compute <m>\displaystyle\int \frac{2x^3 + 11x^2 + 18}{x^2(x^2 + 9)}\,dx</m></p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6c: Problem 10 (trig substitution) -->
+      <page>
+        <exercise workspace="7 in" number="10">
+          <statement><p>Compute <m>\displaystyle\int \frac{1}{(4 + 9x^2)^{5/2}}\,dx</m></p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6d: Problems 11-12 (improper + definite) -->
+      <page>
+        <exercise workspace="3.75 in" number="11">
+          <statement><p>Compute <m>\displaystyle\int_{3}^{\infty} \frac{1}{x\,\left(\ln(x)\right)^2}\,dx</m></p></statement>
+        </exercise>
+        <exercise workspace="3.75 in" number="12">
+          <statement><p>Compute <m>\displaystyle\int_{0}^{1} \frac{x + 4}{x^2 + 1}\,dx</m></p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8a: Now Grades Go Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>A certain substitution gives <m>\displaystyle\int \sin^3(x)\cos^n(x)\,dx = \int u^9 - u^7\,du</m>. Given this, <m>n</m> must be <fillin/>.
+              <ol marker="(a)">
+                <li><p><m>1</m></p></li>
+                <li><p><m>3</m></p></li>
+                <li><p><m>5</m></p></li>
+                <li><p><m>7</m></p></li>
+                <li><p>None of these.</p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Suppose <m>f</m> is a function such that <m>f'</m> and <m>f''</m> exist, and <m>f(0) = 1</m>, <m>f'(0) = 5</m>, <m>f(2) = 3</m>, <m>f'(2) = 7</m>. Which of the following correctly evaluates <m>\displaystyle\int_{0}^{2} 3x f''(x)\,dx</m>?
+              <ol marker="(a)">
+                <li><p><m>36</m></p></li>
+                <li><p><m>32</m></p></li>
+                <li><p><m>28</m></p></li>
+                <li><p><m>24</m></p></li>
+                <li><p><m>22</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8b: Now Grades Go Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p>The base of a solid is the triangle enclosed by <m>x + y = 5</m>, the <m>x</m>-axis, and the <m>y</m>-axis. Its cross sections are semicircles perpendicular to the <m>y</m>-axis. Which integral below calculates the volume of the solid?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle\frac{\pi}{2}\int_{0}^{5}(5-y)^2\,dy</m></p></li>
+                <li><p><m>\displaystyle\frac{\pi}{8}\int_{0}^{5}(5-y)^2\,dy</m></p></li>
+                <li><p><m>\displaystyle\frac{\pi}{4}\int_{0}^{5}(5-x)^2\,dx</m></p></li>
+                <li><p><m>\displaystyle\int_{0}^{5}(5-y)^2\,dy</m></p></li>
+                <li><p><m>\displaystyle 4\int_{-2}^{2}(4-y^2)\,dx</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>Which of the following integrals gives the volume of the solid obtained by revolving the region bounded by <m>y = 4x - x^2</m> and <m>y = 0</m> about the line <m>x = -2</m>?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle 2\pi\int_0^4 (2-x)(4x-x^2)\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^4 x(4x-x^2)\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^4 (x+2)(4x-x^2)\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^4 (x-2)(4x-x^2)\,dx</m></p></li>
+                <li><p>None of these.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>
