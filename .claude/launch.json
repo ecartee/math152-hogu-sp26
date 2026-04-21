@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pretext-preview",
+      "runtimeExecutable": "/Users/ecartee/.venv/pretext/bin/pretext",
+      "runtimeArgs": ["view", "web2", "--no-launch", "--port", "8128"],
+      "port": 8128
+    }
+  ]
+}
