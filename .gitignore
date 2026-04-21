@@ -108,3 +108,7 @@ codechat_config.yaml
 
 # Don't track Claude Code worktrees (temporary working copies)
 .claude/worktrees/
+
+# Don't track machine-specific helpers (contain hardcoded local paths)
+CLAUDE.md
+deploy.sh

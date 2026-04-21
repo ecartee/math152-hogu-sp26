@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <!--<document-id>math152-hogu-session12</document-id>-->
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session12wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #12: Final Exam Review Part 2 -- Chapters 10 &amp; 11</title>
+
+      <!-- PAGE 1a: Warm-Up — polar MC (problems 1-3) -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <statement>
+            <p>To find the Cartesian coordinates <m>(x, y)</m> when the polar coordinates <m>(r, \theta)</m> are known, which equations should be used? <fillin/>
+              <ol marker="(a)">
+                <li><p><m>x = r\sin(\theta),\ y = r\cos(\theta)</m></p></li>
+                <li><p><m>r = x\cos(\theta),\ r = y\sin(\theta)</m></p></li>
+                <li><p><m>r^2 = x^2 + y^2,\ \tan(\theta) = \dfrac{y}{x}</m></p></li>
+                <li><p><m>x = r^2\cos(\theta),\ y = r^2\sin(\theta)</m></p></li>
+                <li><p><m>x = r\cos(\theta),\ y = r\sin(\theta)</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>The Cartesian equation for the polar curve <m>r^2 = 10</m> is <fillin/>.
+              <ol marker="(a)">
+                <li><p><m>(x - 10)^2 + y^2 = 1</m></p></li>
+                <li><p><m>x^2 + (y + 10)^2 = 1</m></p></li>
+                <li><p><m>x^2 + y^2 = 10</m></p></li>
+                <li><p><m>(x - 10)^2 + (y + 10)^2 = 1</m></p></li>
+                <li><p><m>10x^2 + 10y^2 = 1</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>The Cartesian equation for the polar curve <m>r^2\sin(2\theta) = 1</m> is <fillin/>.
+              <ol marker="(a)">
+                <li><p><m>y = \dfrac{x}{2}</m></p></li>
+                <li><p><m>y = 2x</m></p></li>
+                <li><p><m>2x^2 + y^2 = 1</m></p></li>
+                <li><p><m>y = \dfrac{1}{x}</m></p></li>
+                <li><p><m>y = \dfrac{1}{2x}</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 1b: Warm-Up — true/false (problems 4-6) -->
+      <page>
+        <p><alert>Directions:</alert> Answer each of the following with <q>true</q> or <q>false</q>.</p>
+
+        <exercise workspace="0.7 in">
+          <statement><p><fillin/> If <m>\displaystyle\lim_{n\to\infty} a_n = 0</m>, then <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> is convergent.</p></statement>
+        </exercise>
+        <exercise workspace="0.7 in">
+          <statement><p><fillin/> If <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> is convergent, then <m>\displaystyle\lim_{n\to\infty} a_n = 0</m>.</p></statement>
+        </exercise>
+        <exercise workspace="0.7 in">
+          <statement><p><fillin/> The series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^p}</m> is convergent if <m>p \geq 1</m> and divergent if <m>p \lt 1</m>.</p></statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Hands-On Problems 1-2 (polar coordinate conversion + area of one loop) -->
+      <page>
+        <assemblage>
+          <title>Hands-On</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <introduction>
+            <p>Given the Cartesian point <m>(-4, 4)</m>, find the polar coordinates</p>
+          </introduction>
+          <task workspace="1.75 in">
+            <statement><p>when <m>r \gt 0</m>.</p></statement>
+          </task>
+          <task workspace="1.75 in">
+            <statement><p>when <m>r \lt 0</m>.</p></statement>
+          </task>
+        </exercise>
+
+        <exercise workspace="3.5 in" number="2">
+          <statement>
+            <p>Find the area of the region enclosed by one loop of the curve <m>r = 4\cos(3\theta)</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Problem 3 (area inside/outside polar curves) -->
+      <page>
+        <exercise workspace="7 in" number="3">
+          <statement>
+            <p>Find the area of the region inside the curve <m>r = 3\cos(\theta)</m> and outside the curve <m>r = 1 + \cos(\theta)</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Problem 4 (length of polar curve) -->
+      <page>
+        <exercise workspace="7 in" number="4">
+          <statement>
+            <p>Find the length of the polar curve <m>r = 2\theta^2</m> for <m>0 \leq \theta \leq 2\pi</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Problem 5 (Maclaurin series) -->
+      <page>
+        <exercise workspace="7 in" number="5">
+          <statement>
+            <p>Find the Maclaurin series for the function <m>f(x) = x^2 e^{-x^3}</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Problem 6 (three series convergence) -->
+      <page>
+        <exercise number="6">
+          <introduction>
+            <p>Determine whether the following series converge or diverge. Justify your answers.</p>
+          </introduction>
+          <task workspace="2.5 in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{\sin(n) + 5}{n^{3/2}}</m></p></statement>
+          </task>
+          <task workspace="2.5 in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{5n \cdot e^{2n}}{4^n}</m></p></statement>
+          </task>
+          <task workspace="2.5 in">
+            <statement><p><m>\displaystyle\sum_{n=2}^{\infty} \frac{\sqrt{n} + 4}{n^3 - 3n}</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Problem 7 (integral test) -->
+      <page>
+        <exercise number="7">
+          <task workspace="4 in">
+            <statement><p>Use the integral test to show that the series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3}</m> converges.</p></statement>
+          </task>
+          <task workspace="3.5 in">
+            <statement><p>How many terms are needed to guarantee that the <m>n</m>-th partial sum <m>s_n</m> is accurate to within <m>\dfrac{1}{100}</m>?</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Problem 8 (parametric tangent line) -->
+      <page>
+        <exercise workspace="7 in" number="8">
+          <statement>
+            <p>At what point(s) on the curve <m>x = t^2 + 1,\ y = t^3 - 1</m> does the tangent line have slope <m>\dfrac{1}{2}</m>?</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Problem 9 (Taylor's Inequality) -->
+      <page>
+        <exercise workspace="6.5 in" number="9">
+          <statement>
+            <p>Consider the function <m>f(x) = e^{-2x}</m>. Use Taylor's Inequality to give an upper bound on the remainder when using <m>T_2(x)</m> centered at <m>a = 3</m> to approximate this function on the interval <m>1 \leq x \leq 4</m>.</p>
+            <p>Taylor's Inequality: <m>\displaystyle |R_n(x)| \leq \frac{M}{(n+1)!}\,|x - a|^{n+1}</m> where <m>|f^{(n+1)}(x)| \leq M</m> for <m>1 \leq x \lt 4</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Problems 10-11 (parametric surface area + parametric length) -->
+      <page>
+        <exercise workspace="3.5 in" number="10">
+          <statement>
+            <p>Consider the curve <m>x = \cos(t),\ y = 3 + \sin(t)</m> for <m>0 \leq t \leq 2\pi</m>. Find the area of the surface generated by revolving this curve around the <m>x</m>-axis.</p>
+          </statement>
+        </exercise>
+        <exercise workspace="3.5 in" number="11">
+          <statement>
+            <p>Find the length of the curve <m>\displaystyle x = \frac{1}{3}(2t + 3)^{3/2},\ y = t + \frac{t^2}{2}</m> for <m>0 \leq t \leq 2</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11a: Grades Up! problems 1-2 (parametric Cartesian + n ln n) -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>Eliminating the parameter from the curve <m>x = 2\cos(t),\ y = 3\sin(t)</m> for <m>0 \leq t \leq 2\pi</m> gives the Cartesian equation <fillin/>.
+              <ol marker="(a)">
+                <li><p><m>\dfrac{x^2}{4} + \dfrac{y^2}{9} = 1</m></p></li>
+                <li><p><m>\dfrac{x^2}{9} + \dfrac{y^2}{4} = 1</m></p></li>
+                <li><p><m>x^2 + y^2 = 1</m></p></li>
+                <li><p><m>x^2 + y^2 = 13</m></p></li>
+                <li><p>None of these.</p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Which of the following is true for <m>\displaystyle\sum_{n=2}^{\infty} \frac{(-1)^n}{n\,\ln(n)}</m>? <fillin/>
+              <ol marker="(a)">
+                <li><p>The series converges absolutely.</p></li>
+                <li><p>The series converges, but not absolutely.</p></li>
+                <li><p>The series diverges by the Alternating Series Test.</p></li>
+                <li><p>The series diverges by the Test for Divergence.</p></li>
+                <li><p>None of these.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11b: Grades Up! problems 3-4 (sum via Maclaurin + ratio test) -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p>Find the sum of the series <m>\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n\,3^{2n+1}}{5^{2n}\,(2n)!}</m>. <fillin/>
+              <ol marker="(a)">
+                <li><p><m>3\sin\!\left(\dfrac{3}{5}\right)</m></p></li>
+                <li><p><m>-3\cos\!\left(\dfrac{3}{5}\right)</m></p></li>
+                <li><p><m>-3\sin\!\left(\dfrac{3}{5}\right)</m></p></li>
+                <li><p><m>3\cos\!\left(\dfrac{3}{5}\right)</m></p></li>
+                <li><p><m>-\sin\!\left(\dfrac{3}{5}\right)</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>The series <m>\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{(n+1)!}</m> <fillin/>
+              <ol marker="(a)">
+                <li><p>diverges by the integral test.</p></li>
+                <li><p>converges by the ratio test.</p></li>
+                <li><p>converges by the integral test.</p></li>
+                <li><p>diverges by the ratio test.</p></li>
+                <li><p>diverges by the test for divergence.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11c: Grades Up! problems 5-6 -->
+      <page>
+        <exercise number="5">
+          <statement>
+            <p>The interval of convergence for <m>\displaystyle\sum_{n=2}^{\infty} \frac{(-1)^n (3x - 1)^n}{5^n (n - 1)}</m> is <fillin/>.
+              <ol marker="(a)">
+                <li><p><m>\left(-\dfrac{4}{3},\ 2\right)</m></p></li>
+                <li><p><m>\left[-\dfrac{4}{3},\ 2\right]</m></p></li>
+                <li><p><m>\left(-\dfrac{4}{3},\ 2\right]</m></p></li>
+                <li><p><m>\left(0,\ \dfrac{1}{3}\right]</m></p></li>
+                <li><p><m>\left(0,\ \dfrac{1}{3}\right)</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="6">
+          <statement>
+            <p>Which integral will correctly calculate the surface area of the object obtained by rotating the curve <m>y = e^{-x/2}</m>, <m>0 \leq x \lt 2</m> about the <m>x</m>-axis? <fillin/>
+              <ol marker="(a)">
+                <li><p><m>\displaystyle\int_0^2 e^{-t/2}\sqrt{1 + \tfrac{1}{4}e^{-t}}\,dt</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^2 e^{-x}\sqrt{1 + \tfrac{1}{4}e^{-x}}\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^2 e^{-t/2}\sqrt{\tfrac{1}{4}e^{-t}}\,dt</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^2 e^{-t/2}\left(1 + \tfrac{1}{4}e^{-t}\right)^{2}\,dt</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_0^2 e^{-t/2}\sqrt{1 + \tfrac{1}{4}e^{-t}}\,dt</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>
