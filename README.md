@@ -4,10 +4,10 @@ Supplemental worksheets for the **Hands-On, Grades Up** (HOGU) program in MATH 1
 
 ## Viewing the worksheets
 
-Worksheets are published at:
-**https://ecartee.github.io/math152-hogu-sp26/**
-
 Each worksheet is an accessible HTML page. To get a printable version, use the print button built into the page.
+
+- [Session #11: Final Exam Review Part 1 &mdash; Chapters 6 &amp; 7](https://ecartee.github.io/math152-hogu-sp26/web2/session11wks.html)
+- [Session #12: Final Exam Review Part 2 &mdash; Chapters 10 &amp; 11](https://ecartee.github.io/math152-hogu-sp26/web2/session12wks.html)
 
 ## Building locally
 

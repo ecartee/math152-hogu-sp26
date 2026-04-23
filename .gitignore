@@ -106,8 +106,8 @@ codechat_config.yaml
 .github/workflows/deploy.yml
 .github/workflows/test-build.yml
 
-# Don't track Claude Code worktrees (temporary working copies)
-.claude/worktrees/
+# Don't track local Claude Code config (worktrees, launch.json, etc.)
+.claude/
 
 # Don't track machine-specific helpers (contain hardcoded local paths)
 CLAUDE.md
