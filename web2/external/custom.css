@@ -1,0 +1,17 @@
+/*
+ * Custom HOGU worksheet overrides.
+ * Loaded AFTER the greeley theme via html.css.extra in publication.ptx.
+ */
+
+/*
+ * Theme bug: `.onepage h4.heading { font-size: 1.2em }` makes <task> labels (a),(b),(c)
+ * larger than the parent <exercise> number, which inherits down to body size.
+ * Restore a clean hierarchy: exercise number prominent, task labels subordinate.
+ */
+.onepage > article.exercise > h3.heading {
+  font-size: 1.3em;
+}
+
+.onepage article.task > h4.heading {
+  font-size: 1em;
+}
