@@ -26,7 +26,7 @@
         </assemblage>
 
         <p>
-          <alert>Directions:</alert> Choose the integration technique that can be used to solve each of the following integrals.
+          <alert>Directions:</alert> Choose the integration technique that can be used to solve each of the following integrals. You do <em>not</em> need to solve the integrals; just identify the method.
         </p>
         <p>
           <ol marker="I.">
@@ -78,7 +78,7 @@
         </assemblage>
         <exercise number="1">
           <introduction>
-            <p>Let <m>R</m> denote the region bounded by <m>y = e^x</m>, <m>y = e^{-x}</m> between <m>x = -1</m> and <m>x = 2</m>.</p>
+            <p>Let <m>R</m> denote the region bounded by <m>y = e^x</m> and <m>y = e^{-x}</m> between <m>x = -1</m> and <m>x = 2</m>.</p>
           </introduction>
           <task workspace="3 in">
             <statement><p>Sketch the region <m>R</m>.</p></statement>
@@ -131,7 +131,7 @@
       <page>
         <exercise workspace="2 in" number="5">
           <statement>
-            <p>The tank in a shape of a hemisphere with radius 5 ft is full of water. Find the work done in pumping all the water to the top of the tank. Use the fact that water weighs 62.5 lb/ft<m>^3</m>.</p>
+            <p>The tank in a shape of a hemisphere with radius 5 ft is full of water. Set up, <alert>but do not evaluate</alert>, the integral that gives the work done in pumping all the water to the top of the tank. Use the fact that water weighs 62.5 lb/ft<m>^3</m>.</p>
             <sidebyside width="40%" margins="30%">
               <image source="hemisphere-tank.svg"/>
             </sidebyside>
