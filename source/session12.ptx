@@ -74,13 +74,13 @@
       <page>
         <p><alert>Directions:</alert> Answer each of the following with <q>true</q> or <q>false</q>.</p>
 
-        <exercise workspace="0.7 in">
+        <exercise workspace="0.7in">
           <statement><p><fillin/> If <m>\displaystyle\lim_{n\to\infty} a_n = 0</m>, then <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> is convergent.</p></statement>
         </exercise>
-        <exercise workspace="0.7 in">
+        <exercise workspace="0.7in">
           <statement><p><fillin/> If <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> is convergent, then <m>\displaystyle\lim_{n\to\infty} a_n = 0</m>.</p></statement>
         </exercise>
-        <exercise workspace="0.7 in">
+        <exercise workspace="0.7in">
           <statement><p><fillin/> The series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^p}</m> is convergent if <m>p \geq 1</m> and divergent if <m>p \lt 1</m>.</p></statement>
         </exercise>
       </page>
@@ -96,112 +96,94 @@
           <introduction>
             <p>Given the Cartesian point <m>(-4, 4)</m>, find the polar coordinates</p>
           </introduction>
-          <task workspace="1.75 in">
+          <task workspace="1in">
             <statement><p>when <m>r \gt 0</m>.</p></statement>
           </task>
-          <task workspace="1.75 in">
+          <task workspace="1in">
             <statement><p>when <m>r \lt 0</m>.</p></statement>
           </task>
         </exercise>
 
-        <exercise workspace="3.5 in" number="2">
+        <exercise workspace="5in" number="2">
           <statement>
             <p>Find the area of the region enclosed by one loop of the curve <m>r = 4\cos(3\theta)</m>.</p>
           </statement>
         </exercise>
       </page>
 
-      <!-- PAGE 3: Problem 3 (area inside/outside polar curves) -->
+      <!-- PAGE 3: Problems 3 + 4 (polar area + polar arc length) -->
       <page>
-        <exercise workspace="7 in" number="3">
+        <exercise workspace="4.5in" number="3">
           <statement>
             <p>Find the area of the region inside the curve <m>r = 3\cos(\theta)</m> and outside the curve <m>r = 1 + \cos(\theta)</m>.</p>
           </statement>
         </exercise>
-      </page>
-
-      <!-- PAGE 4: Problem 4 (length of polar curve) -->
-      <page>
-        <exercise workspace="7 in" number="4">
+        <exercise workspace="4.5in" number="4">
           <statement>
             <p>Find the length of the polar curve <m>r = 2\theta^2</m> for <m>0 \leq \theta \leq 2\pi</m>.</p>
           </statement>
         </exercise>
       </page>
 
-      <!-- PAGE 5: Problem 5 (Maclaurin series) -->
+      <!-- PAGE 5: Problems 5 + 6 (Maclaurin series + parametric tangent) -->
       <page>
-        <exercise workspace="7 in" number="5">
+        <exercise workspace="3.5in" number="5">
           <statement>
             <p>Find the Maclaurin series for the function <m>f(x) = x^2 e^{-x^3}</m>.</p>
           </statement>
         </exercise>
-      </page>
-
-      <!-- PAGE 6: Problem 6 (three series convergence) -->
-      <page>
-        <exercise number="6">
-          <introduction>
-            <p>Determine whether the following series converge or diverge. Justify your answers.</p>
-          </introduction>
-          <task workspace="2.5 in">
-            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{\sin(n) + 5}{n^{3/2}}</m></p></statement>
-          </task>
-          <task workspace="2.5 in">
-            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{5n \cdot e^{2n}}{4^n}</m></p></statement>
-          </task>
-          <task workspace="2.5 in">
-            <statement><p><m>\displaystyle\sum_{n=2}^{\infty} \frac{\sqrt{n} + 4}{n^3 - 3n}</m></p></statement>
-          </task>
-        </exercise>
-      </page>
-
-      <!-- PAGE 7: Problem 7 (integral test) -->
-      <page>
-        <exercise number="7">
-          <task workspace="4 in">
-            <statement><p>Use the integral test to show that the series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3}</m> converges.</p></statement>
-          </task>
-          <task workspace="3.5 in">
-            <statement><p>How many terms are needed to guarantee that the <m>n</m>-th partial sum <m>s_n</m> is accurate to within <m>\dfrac{1}{100}</m>?</p></statement>
-          </task>
-        </exercise>
-      </page>
-
-      <!-- PAGE 8: Problem 8 (parametric tangent line) -->
-      <page>
-        <exercise workspace="7 in" number="8">
+        <exercise workspace="3.5in" number="6">
           <statement>
             <p>At what point(s) on the curve <m>x = t^2 + 1,\ y = t^3 - 1</m> does the tangent line have slope <m>\dfrac{1}{2}</m>?</p>
           </statement>
         </exercise>
       </page>
 
-      <!-- PAGE 9: Problem 9 (Taylor's Inequality) -->
+      <!-- PAGE 6: Problem 7 (three series convergence) -->
       <page>
-        <exercise workspace="6.5 in" number="9">
-          <statement>
-            <p>Consider the function <m>f(x) = e^{-2x}</m>. Use Taylor's Inequality to give an upper bound on the remainder when using <m>T_2(x)</m> centered at <m>a = 3</m> to approximate this function on the interval <m>1 \leq x \leq 4</m>.</p>
-            <p>Taylor's Inequality: <m>\displaystyle |R_n(x)| \leq \frac{M}{(n+1)!}\,|x - a|^{n+1}</m> where <m>|f^{(n+1)}(x)| \leq M</m> for <m>1 \leq x \lt 4</m>.</p>
-          </statement>
+        <exercise number="7">
+          <introduction>
+            <p>Determine whether the following series converge or diverge. Justify your answers.</p>
+          </introduction>
+          <task workspace="2.25in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{\sin(n) + 5}{n^{3/2}}</m></p></statement>
+          </task>
+          <task workspace="2.25in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{5n \cdot e^{2n}}{4^n}</m></p></statement>
+          </task>
+          <task workspace="2.25in">
+            <statement><p><m>\displaystyle\sum_{n=2}^{\infty} \frac{\sqrt{n} + 4}{n^3 - 3n}</m></p></statement>
+          </task>
         </exercise>
       </page>
 
-      <!-- PAGE 10: Problems 10-11 (parametric surface area + parametric length) -->
+      <!-- PAGE 7: Problem 8 (integral test) -->
       <page>
-        <exercise workspace="3.5 in" number="10">
+        <exercise number="8">
+          <task workspace="3.5in">
+            <statement><p>Use the integral test to show that the series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3}</m> converges.</p></statement>
+          </task>
+          <task workspace="3in">
+            <statement><p>How many terms are needed to guarantee that the <m>n</m>-th partial sum <m>s_n</m> is accurate to within <m>\dfrac{1}{100}</m>?</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Problems 9-10 (parametric surface area + parametric length) -->
+      <page>
+        <exercise workspace="3.5in" number="9">
           <statement>
             <p>Consider the curve <m>x = \cos(t),\ y = 3 + \sin(t)</m> for <m>0 \leq t \leq 2\pi</m>. Find the area of the surface generated by revolving this curve around the <m>x</m>-axis.</p>
           </statement>
         </exercise>
-        <exercise workspace="3.5 in" number="11">
+        <exercise workspace="3.5in" number="10">
           <statement>
             <p>Find the length of the curve <m>\displaystyle x = \frac{1}{3}(2t + 3)^{3/2},\ y = t + \frac{t^2}{2}</m> for <m>0 \leq t \leq 2</m>.</p>
           </statement>
         </exercise>
       </page>
 
-      <!-- PAGE 11a: Grades Up! problems 1-2 (parametric Cartesian + n ln n) -->
+      <!-- PAGE 11a: Grades Up! problems 1-3 -->
       <page>
         <assemblage>
           <title>Grades Up!</title>
@@ -220,8 +202,6 @@
               </ol>
             </p>
             <p><nbsp/></p>
-            <p><nbsp/></p>
-            <p><nbsp/></p>
           </statement>
         </exercise>
 
@@ -236,12 +216,10 @@
                 <li><p>None of these.</p></li>
               </ol>
             </p>
+            <p><nbsp/></p>
           </statement>
         </exercise>
-      </page>
 
-      <!-- PAGE 11b: Grades Up! problems 3-4 (sum via Maclaurin + ratio test) -->
-      <page>
         <exercise number="3">
           <statement>
             <p>Find the sum of the series <m>\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n\,3^{2n+1}}{5^{2n}\,(2n)!}</m>. <fillin/>
@@ -253,12 +231,12 @@
                 <li><p><m>-\sin\!\left(\dfrac{3}{5}\right)</m></p></li>
               </ol>
             </p>
-            <p><nbsp/></p>
-            <p><nbsp/></p>
-            <p><nbsp/></p>
           </statement>
         </exercise>
+      </page>
 
+      <!-- PAGE 11b: Grades Up! problems 4-6 -->
+      <page>
         <exercise number="4">
           <statement>
             <p>The series <m>\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{(n+1)!}</m> <fillin/>
@@ -270,12 +248,10 @@
                 <li><p>diverges by the test for divergence.</p></li>
               </ol>
             </p>
+            <p><nbsp/></p>
           </statement>
         </exercise>
-      </page>
 
-      <!-- PAGE 11c: Grades Up! problems 5-6 -->
-      <page>
         <exercise number="5">
           <statement>
             <p>The interval of convergence for <m>\displaystyle\sum_{n=2}^{\infty} \frac{(-1)^n (3x - 1)^n}{5^n (n - 1)}</m> is <fillin/>.
@@ -287,7 +263,6 @@
                 <li><p><m>\left(0,\ \dfrac{1}{3}\right)</m></p></li>
               </ol>
             </p>
-            <p><nbsp/></p>
             <p><nbsp/></p>
           </statement>
         </exercise>

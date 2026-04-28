@@ -6,10 +6,10 @@
 <project ptx-version="2">
   <targets>
     <target name="web2" format="html" source="session12.ptx" deploy-dir="web2">
-      <stringparams html.css.extra="custom.css"/>
+      <stringparams html.css.extra="external/custom.css"/>
     </target>
     <target name="web2-s11" format="html" source="session11.ptx" deploy-dir="web2">
-      <stringparams html.css.extra="custom.css"/>
+      <stringparams html.css.extra="external/custom.css"/>
     </target>
   </targets>
 </project>
