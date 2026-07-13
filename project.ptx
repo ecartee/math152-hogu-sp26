@@ -11,6 +11,9 @@
     <target name="web2-s11" format="html" source="session11.ptx" deploy-dir="web2">
       <stringparams html.css.extra="external/custom.css"/>
     </target>
+    <target name="web2-s1" format="html" source="session1.ptx" deploy-dir="web2">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
   </targets>
 </project>
 
