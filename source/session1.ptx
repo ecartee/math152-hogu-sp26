@@ -67,7 +67,9 @@
           <statement>
             <p>Given <m>f(x) = x^2</m> and <m>g(x) = 2x - x^2</m>, shade the region, <m>R</m>, bounded by the two functions. Set up, <alert>but do not evaluate</alert>, the integral that would find the area of <m>R</m>.</p>
             <sidebyside width="45%" margins="27.5%">
-              <image source="s1-warmup-parabolas.png"/>
+              <image source="s1-warmup-parabolas.png">
+                <description>Graph of two parabolas on a coordinate grid. The parabola f of x equals x squared opens upward with vertex at the origin. The parabola g of x equals 2 x minus x squared opens downward with vertex at the point (1, 1). The two curves intersect at the origin and at the point (1, 1).</description>
+              </image>
             </sidebyside>
           </statement>
         </exercise>
@@ -154,16 +156,16 @@
           <introduction>
             <p>Evaluate the following definite integrals:</p>
           </introduction>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int_{-3}^{3} \frac{2x}{x^2 + 1}\,dx =</m></p></statement>
           </task>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int_{0}^{\sqrt{\pi}} 6x\cos(2x^2)\,dx =</m></p></statement>
           </task>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int_{0}^{\pi} 3\cos^2(x)\sin(x)\,dx =</m></p></statement>
           </task>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int_{1}^{e^{\pi/3}} \frac{1}{x}\sin(\ln(x))\,dx =</m></p></statement>
           </task>
         </exercise>
@@ -175,16 +177,16 @@
           <introduction>
             <p>Evaluate the following indefinite integrals (some of these are a little trickier):</p>
           </introduction>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int \frac{1}{x\,\cos^2(\ln(x))}\,dx =</m></p></statement>
           </task>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int \frac{y}{\sqrt{y + 1}}\,dy =</m></p></statement>
           </task>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int \frac{e^t}{e^t + 5}\,dt =</m></p></statement>
           </task>
-          <task workspace="1.8in">
+          <task workspace="1.7in">
             <statement><p><m>\displaystyle\int z^3\sqrt{z^2 + 8}\,dz =</m></p></statement>
           </task>
         </exercise>
@@ -216,7 +218,9 @@
             <statement>
               <p>Sketch the region <m>R</m> enclosed by the two curves.</p>
               <sidebyside width="45%" margins="0% 55%">
-                <image source="s1-axes-p5.png"/>
+                <image source="s1-axes-p5.png">
+                <description>Blank coordinate grid for sketching, with x-axis from negative 4 to 4 and y-axis from negative 2 to 4.</description>
+              </image>
               </sidebyside>
             </statement>
           </task>
@@ -232,7 +236,9 @@
             <statement>
               <p>Sketch the region <m>R</m> enclosed by these curves for <m>0 \leq x \leq \pi</m>.</p>
               <sidebyside width="45%" margins="0% 55%">
-                <image source="s1-axes-p6.png"/>
+                <image source="s1-axes-p6.png">
+                <description>Blank coordinate grid for sketching, with x-axis from negative 1 to 5 and y-axis from negative 2 to 2.</description>
+              </image>
               </sidebyside>
             </statement>
           </task>
@@ -252,7 +258,9 @@
             <statement>
               <p>Sketch the triangular region, <m>R</m>, bounded by the three functions.</p>
               <sidebyside width="48%" margins="26%">
-                <image source="s1-axes-p7.png"/>
+                <image source="s1-axes-p7.png">
+                <description>Blank coordinate grid for sketching, with x-axis from negative 1 to 5 and y-axis from negative 1 to 5.</description>
+              </image>
               </sidebyside>
             </statement>
           </task>
@@ -271,7 +279,9 @@
           <statement>
             <p>Consider the shaded region in the graph below. Use an integral (or integrals) to find the area of the shaded region.</p>
             <sidebyside width="45%" margins="0% 55%">
-              <image source="s1-parallelogram.png"/>
+              <image source="s1-parallelogram.png">
+                <description>Shaded parallelogram-shaped region on a coordinate grid, bounded above by the horizontal line y equals 4, below by the horizontal line y equals 2, on the left by the line y equals 3 x plus 8, and on the right by the line y equals 2 x minus 2. The vertices of the region are at (negative 2, 2), (2, 2), (3, 4), and (negative 4 thirds, 4).</description>
+              </image>
             </sidebyside>
           </statement>
         </exercise>
@@ -279,7 +289,9 @@
           <statement>
             <p>Consider the shaded region in the graph below. Use an integral (or integrals) to find the area of the shaded region.</p>
             <sidebyside width="34%" margins="0% 66%">
-              <image source="s1-sideways-parabolas.png"/>
+              <image source="s1-sideways-parabolas.png">
+                <description>Shaded region enclosed by two sideways parabolas: the curve x equals y squared minus 5 y opens to the right, and the curve x equals 3 y minus y squared opens to the left. The two curves intersect at the origin and at the point (negative 4, 4), and the enclosed region lies mostly in the second quadrant.</description>
+              </image>
             </sidebyside>
           </statement>
         </exercise>
