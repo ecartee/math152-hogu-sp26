@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+  Landing page for the deployed worksheet site.
+
+  The presence of this `site/` directory (with no site.ptx / site.json in it)
+  puts `pretext deploy` in its "static" strategy: it stages every target, then
+  copies this directory over the top of the staged root. That means:
+    * this file becomes the site root, so the top-level URL works, and
+    * PreTeXt does NOT try to generate a landing page with Pelican, which is
+      what produced the "error: Pelican is not installed" line in deploy logs.
+
+  Adding a session: add its target to project.ptx, then add one <li> below.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MATH 152 Hands-On, Grades Up — Worksheets</title>
+<style>
+  :root {
+    --maroon: #500000;   /* TAMU maroon; 15.7:1 on white */
+    --ink: #1a1a1a;
+    --muted: #4a4a4a;    /* 9.0:1 on white */
+    --rule: #d0d0d0;
+    --card: #ffffff;
+    --page: #f7f7f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 4rem;
+    background: var(--page);
+    color: var(--ink);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; }
+  header { border-bottom: 3px solid var(--maroon); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  h1 { color: var(--maroon); font-size: 1.75rem; margin: 0 0 .25rem; }
+  .term { color: var(--muted); font-size: 1rem; margin: 0; }
+  .lede { margin: 0 0 1.75rem; color: var(--muted); }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin-bottom: .75rem; }
+  li a {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-left: 5px solid var(--maroon);
+    border-radius: 4px;
+    padding: .85rem 1rem;
+    text-decoration: none;
+    color: var(--maroon);
+    font-weight: 600;
+  }
+  li a:hover, li a:focus { border-color: var(--maroon); outline: 2px solid var(--maroon); outline-offset: 1px; }
+  li a .topic { display: block; color: var(--ink); font-weight: 400; font-size: .95rem; margin-top: .15rem; }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--maroon); }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f2f2f2; --muted: #c9c9c9; --rule: #444; --card: #1f2328; --page: #14191f; --maroon: #e8b3b3; }
+    li a { color: var(--maroon); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>MATH 152 Hands-On, Grades Up</h1>
+    <p class="term">Texas A&amp;M Math Learning Center · Spring 2026</p>
+  </header>
+
+  <p class="lede">
+    Select a session to view its worksheet. Print a worksheet — or save it as a
+    PDF with blank working space — using the printer icon on the worksheet page.
+  </p>
+
+  <ul>
+    <li>
+      <a href="session1/">Session 1
+        <span class="topic">The Substitution Rule &amp; Area Between Curves (Sections 5.5 &amp; 6.1)</span>
+      </a>
+    </li>
+    <li>
+      <a href="session11/">Session 11
+        <span class="topic">Final Exam Review Part 1 (Chapters 6 &amp; 7)</span>
+      </a>
+    </li>
+    <li>
+      <a href="session12/">Session 12
+        <span class="topic">Final Exam Review Part 2 (Chapters 10 &amp; 11)</span>
+      </a>
+    </li>
+  </ul>
+
+  <footer>
+    © 2026 <a href="https://mlc.tamu.edu/">TAMU Math Learning Center</a>
+  </footer>
+</div>
+</body>
+</html>
