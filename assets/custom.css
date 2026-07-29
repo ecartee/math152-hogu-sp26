@@ -15,3 +15,31 @@
 .onepage article.task > h4.heading {
   font-size: 1em;
 }
+
+/*
+ * Accessibility: use a sans-serif face everywhere text appears (math is
+ * rendered by MathJax in its TeX fonts and is unaffected). The scrollable
+ * theme already uses Open Sans for body text but PT Serif for headings; the
+ * print-preview stylesheet (print-worksheet.css) sets PT Serif for the whole
+ * worksheet via --font-print. custom.css loads after both stylesheets, so
+ * these variable overrides win in both views.
+ */
+:root {
+  --font-headings: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-print: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Print preview loads only print-worksheet.css, which draws tabular rules with
+ * `1px solid var(--body-text-color)` — but that variable is defined in the theme
+ * CSS, which print preview does NOT load. The empty var() invalidates the whole
+ * border declaration, so table rules vanish. Define the variable for .onepage.
+ */
+.onepage {
+  --body-text-color: #000;
+}
+
+/* Let worksheet tables with column widths actually spread out in print preview. */
+.onepage .tabular-box.natural-width table {
+  width: 92%;
+}

@@ -133,7 +133,9 @@
           <statement>
             <p>The tank in a shape of a hemisphere with radius 5 ft is full of water. Set up, <alert>but do not evaluate</alert>, the integral that gives the work done in pumping all the water to the top of the tank. Use the fact that water weighs 62.5 lb/ft<m>^3</m>.</p>
             <sidebyside width="40%" margins="30%">
-              <image source="hemisphere-tank.svg"/>
+              <image source="hemisphere-tank.svg">
+                <description>Tank in the shape of a hemisphere with its flat circular side on top and the curved dome below. A horizontal arrow across the top face is labeled 5 feet, indicating the radius.</description>
+              </image>
             </sidebyside>
           </statement>
         </exercise>

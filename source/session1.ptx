@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session1wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #1: The Substitution Rule &amp; Area Between Curves -- Sections 5.5 &amp; 6.1</title>
+
+      <!-- PAGE 1: Warm-up problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <statement>
+            <p>Suppose you want to use the substitution rule to evaluate the integral
+              <me>\int \frac{\cos(x)}{(1 + \sin(x))^2}\,dx</me>
+              How would you rank the following choices of substitution?
+            </p>
+            <p>
+              <m>u = \dfrac{\cos(x)}{(1+\sin(x))^2}</m>, <nbsp/><nbsp/>
+              <m>u = \sin(x)</m>, <nbsp/><nbsp/>
+              <m>u = (1 + \sin(x))^2</m>, <nbsp/><nbsp/>
+              <m>u = 1 + \sin(x)</m>, <nbsp/><nbsp/>
+              <m>u = \cos(x)</m>
+            </p>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+              <col width="22%" right="minor"/>
+              <col width="26%" right="minor"/>
+              <col width="26%" right="minor"/>
+              <col width="26%" right="minor"/>
+              <row bottom="minor">
+                <cell></cell>
+                <cell>Best choice</cell>
+                <cell>Can work</cell>
+                <cell>Won't work</cell>
+              </row>
+              <row bottom="minor">
+                <cell>
+                  <p><nbsp/></p>
+                  <p>Substitution</p>
+                  <p><nbsp/></p>
+                  <p><nbsp/></p>
+                </cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </statement>
+        </exercise>
+
+        <exercise workspace="1.2in">
+          <statement>
+            <p>Given <m>f(x) = x^2</m> and <m>g(x) = 2x - x^2</m>, shade the region, <m>R</m>, bounded by the two functions. Set up, <alert>but do not evaluate</alert>, the integral that would find the area of <m>R</m>.</p>
+            <sidebyside width="45%" margins="27.5%">
+              <image source="s1-warmup-parabolas.png">
+                <description>Graph of two parabolas on a coordinate grid. The parabola f of x equals x squared opens upward with vertex at the origin. The parabola g of x equals 2 x minus x squared opens downward with vertex at the point (1, 1). The two curves intersect at the origin and at the point (1, 1).</description>
+              </image>
+            </sidebyside>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Warm-up problem 3 (categorize integrals) -->
+      <page>
+        <exercise>
+          <statement>
+            <p><alert>Directions:</alert> For each of the integrals below, categorize them as one of the following:</p>
+            <p>
+              <ol marker="(A)">
+                <li><p>Substitution is not necessary, this can be solved using basic rules of integration (e.g., power, basic trig, etc.)</p></li>
+                <li><p>Can be solved using substitution</p></li>
+                <li><p>neither A nor B.</p></li>
+              </ol>
+            </p>
+            <p>For the ones in which you answer (B), identify the expression to substitute for <m>u</m> and then write the whole integral in terms of <m>u</m> and <m>du</m>. <alert>It is not necessary to evaluate the integrals for the <q>warm-up</q> of this session.</alert></p>
+            <p><nbsp/></p>
+            <sidebyside widths="33% 33% 33%">
+              <p><m>\displaystyle\int (x^3 + 1)\,dx</m></p>
+              <p><m>\displaystyle\int \sqrt{x}\,(1 - x^2)\,dx</m></p>
+              <p><m>\displaystyle\int \tan(x)\sec(x)\,dx</m></p>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <sidebyside widths="33% 33% 33%">
+              <p><m>\displaystyle\int x^2 (x^3 + 1)^4\,dx</m></p>
+              <p><m>\displaystyle\int \cos^2(x)\sin(x)\,dx</m></p>
+              <p><m>\displaystyle\int \tan(x)\cos(x)\,dx</m></p>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <sidebyside widths="33% 33% 33%">
+              <p><m>\displaystyle\int \sqrt{x^3 + 1}\,dx</m></p>
+              <p><m>\displaystyle\int \sqrt{1 - \cos^2(x)}\,dx</m></p>
+              <p><m>\displaystyle\int \frac{\sec^2(x)}{\sqrt{\tan(x)}}\,dx</m></p>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <sidebyside widths="33% 33% 33%">
+              <p><m>\displaystyle\int (x^3 + 1)^2\,dx</m></p>
+              <p><m>\displaystyle\int e^{-x^2}\,dx</m></p>
+              <p><m>\displaystyle\int \sin(x^2 + 1)\,dx</m></p>
+            </sidebyside>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Hands-On problem 1 (indefinite integrals) -->
+      <page>
+        <assemblage>
+          <title>Let's get our hands on!</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+        <exercise number="1">
+          <introduction>
+            <p>Evaluate the following indefinite integrals:</p>
+          </introduction>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int 6x\cos(2x^2)\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int x\sqrt{x^2 + 8}\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int e^x \cos(e^x)\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int 3\cos^2(x)\sin(x)\,dx =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Hands-On problem 2 (definite integrals) -->
+      <page>
+        <exercise number="2">
+          <introduction>
+            <p>Evaluate the following definite integrals:</p>
+          </introduction>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int_{-3}^{3} \frac{2x}{x^2 + 1}\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int_{0}^{\sqrt{\pi}} 6x\cos(2x^2)\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int_{0}^{\pi} 3\cos^2(x)\sin(x)\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int_{1}^{e^{\pi/3}} \frac{1}{x}\sin(\ln(x))\,dx =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Hands-On problem 3 (trickier indefinite integrals) -->
+      <page>
+        <exercise number="3">
+          <introduction>
+            <p>Evaluate the following indefinite integrals (some of these are a little trickier):</p>
+          </introduction>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int \frac{1}{x\,\cos^2(\ln(x))}\,dx =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int \frac{y}{\sqrt{y + 1}}\,dy =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int \frac{e^t}{e^t + 5}\,dt =</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p><m>\displaystyle\int z^3\sqrt{z^2 + 8}\,dz =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Hands-On problem 4 (sprinter) -->
+      <page>
+        <exercise number="4">
+          <introduction>
+            <p>A world-class sprinter runs a 100-meter race while wearing a device that tracks their velocity as a function of time. After running the race, the device reports back that their velocity <m>v</m> (in meters per second) as a function of time <m>t</m> (in seconds since the start of the race) can be represented by the function:</p>
+            <me>v(t) = \frac{3}{10}\,t\sqrt{100 - t^2}</me>
+          </introduction>
+          <task workspace="4in">
+            <statement><p>Use a definite integral to find the distance <m>x(t)</m> that the sprinter has ran after <m>t</m> seconds.</p></statement>
+          </task>
+          <task workspace="3in">
+            <statement><p>How long (in seconds) did it take for the sprinter to finish the 100-meter race?</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Hands-On problems 5-6 (area between curves with sketches) -->
+      <page>
+        <exercise number="5">
+          <introduction>
+            <p>Given <m>y_1 = x^2</m> and <m>y_2 = 2 - |x|</m>,</p>
+          </introduction>
+          <task>
+            <statement>
+              <p>Sketch the region <m>R</m> enclosed by the two curves.</p>
+              <sidebyside width="45%" margins="0% 55%">
+                <image source="s1-axes-p5.png">
+                <description>Blank coordinate grid for sketching, with x-axis from negative 4 to 4 and y-axis from negative 2 to 4.</description>
+              </image>
+              </sidebyside>
+            </statement>
+          </task>
+          <task workspace="1.4in">
+            <statement><p>Find the area of this region <m>R</m>.</p></statement>
+          </task>
+        </exercise>
+        <exercise number="6">
+          <introduction>
+            <p>Given the curves <m>y_1 = \cos(x)</m> and <m>y_2 = 1 - \cos(x)</m>,</p>
+          </introduction>
+          <task>
+            <statement>
+              <p>Sketch the region <m>R</m> enclosed by these curves for <m>0 \leq x \leq \pi</m>.</p>
+              <sidebyside width="45%" margins="0% 55%">
+                <image source="s1-axes-p6.png">
+                <description>Blank coordinate grid for sketching, with x-axis from negative 1 to 5 and y-axis from negative 2 to 2.</description>
+              </image>
+              </sidebyside>
+            </statement>
+          </task>
+          <task workspace="1.4in">
+            <statement><p>Find the area of this region <m>R</m>.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Hands-On problem 7 (triangular region) -->
+      <page>
+        <exercise number="7">
+          <introduction>
+            <p>Given <m>y_1 = x</m>, <m>\ y_2 = -\dfrac{1}{2}x + 4</m>, <m>\ </m>and <m>\ y_3 = \dfrac{1}{3}x + \dfrac{2}{3}</m>, answer the questions that follow:</p>
+          </introduction>
+          <task>
+            <statement>
+              <p>Sketch the triangular region, <m>R</m>, bounded by the three functions.</p>
+              <sidebyside width="48%" margins="26%">
+                <image source="s1-axes-p7.png">
+                <description>Blank coordinate grid for sketching, with x-axis from negative 1 to 5 and y-axis from negative 1 to 5.</description>
+              </image>
+              </sidebyside>
+            </statement>
+          </task>
+          <task workspace="2.2in">
+            <statement><p>Find the points of the vertices of the triangle.</p></statement>
+          </task>
+          <task workspace="2.2in">
+            <statement><p>Set up but do not evaluate an integral (or integrals) that gives the area of <m>R</m>.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Hands-On problems 8-9 (area from graphs) -->
+      <page>
+        <exercise number="8" workspace="1.4in">
+          <statement>
+            <p>Consider the shaded region in the graph below. Use an integral (or integrals) to find the area of the shaded region.</p>
+            <sidebyside width="45%" margins="0% 55%">
+              <image source="s1-parallelogram.png">
+                <description>Shaded parallelogram-shaped region on a coordinate grid, bounded above by the horizontal line y equals 4, below by the horizontal line y equals 2, on the left by the line y equals 3 x plus 8, and on the right by the line y equals 2 x minus 2. The vertices of the region are at (negative 2, 2), (2, 2), (3, 4), and (negative 4 thirds, 4).</description>
+              </image>
+            </sidebyside>
+          </statement>
+        </exercise>
+        <exercise number="9" workspace="1.3in">
+          <statement>
+            <p>Consider the shaded region in the graph below. Use an integral (or integrals) to find the area of the shaded region.</p>
+            <sidebyside width="34%" margins="0% 66%">
+              <image source="s1-sideways-parabolas.png">
+                <description>Shaded region enclosed by two sideways parabolas: the curve x equals y squared minus 5 y opens to the right, and the curve x equals 3 y minus y squared opens to the left. The two curves intersect at the origin and at the point (negative 4, 4), and the enclosed region lies mostly in the second quadrant.</description>
+              </image>
+            </sidebyside>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Grades Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>When using the substitution method to evaluate the indefinite integral
+              <me>\int \frac{e^{2x}}{(e^{2x} + 1)^3}\,dx</me>
+              which is the best choice for the substitution <m>u</m>?
+              <ol marker="(a)">
+                <li><p><m>u = e^{2x}</m></p></li>
+                <li><p><m>u = e^{2x} + 1</m></p></li>
+                <li><p><m>u = (e^{2x} + 1)^3</m></p></li>
+                <li><p><m>u = x</m></p></li>
+                <li><p><m>u = 2x</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Which integral would find the area of the region enclosed by <m>y_1 = x</m>, <m>\ y_2 = 4x</m>, and <m>y_3 = -x + 2</m>?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle\int_{0}^{1} (3x)\,dx</m></p></li>
+                <li><p><m>\displaystyle\int_{0}^{1} (3x)\,dx + 2\int_{1}^{2} (-x + 1)\,dx</m></p></li>
+                <li><p><m>\displaystyle\int_{0}^{1} (-2x + 2)\,dx</m></p></li>
+                <li><p><m>\displaystyle\int_{0}^{2/5} (-5x + 2)\,dx + \int_{2/5}^{1} (3x)\,dx</m></p></li>
+                <li><p><m>\displaystyle\int_{0}^{2/5} (3x)\,dx + 2\int_{2/5}^{1} (-x + 1)\,dx</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11: Grades Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p>Evaluate the following integral:
+              <me>\int \sin^4(x)\cos^3(x)\,dx =</me>
+              <ol marker="(a)">
+                <li><p><m>\sin^5(x) - \sin^7(x) + C</m></p></li>
+                <li><p><m>\dfrac{1}{5}\sin^5(x) - \dfrac{1}{7}\sin^7(x) + C</m></p></li>
+                <li><p><m>-\dfrac{1}{5}\sin^5(x) + \dfrac{1}{7}\sin^7(x) + C</m></p></li>
+                <li><p><m>-\dfrac{1}{20}\left(\cos^5(x)\sin^4(x)\right) + C</m></p></li>
+                <li><p><m>\dfrac{1}{20}\sin^5(x)\cos^4(x) + C</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>Evaluate the following integral:
+              <me>\int_{0}^{\pi/4} (\sec^2 x)\,e^{\tan x}\,dx =</me>
+              <ol marker="(a)">
+                <li><p><m>e^{\sqrt{2}/2} - 1</m></p></li>
+                <li><p><m>e^{1/2} - 1</m></p></li>
+                <li><p><m>e^{\sqrt{2}} - 1</m></p></li>
+                <li><p><m>1 - e</m></p></li>
+                <li><p><m>e - 1</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 12: Challenge -->
+      <page>
+        <assemblage>
+          <title>Challenge</title>
+          <p>Evaluate the following integral and interpret it as the area of a region. Sketch the region the integral represents.</p>
+          <p>
+            <me>\int_{0}^{\pi/2} \left|\sin(x) - \cos(2x)\right|\,dx</me>
+          </p>
+          <p>(<em>Hint</em>: Rewrite <m>\left|\sin(x) - \cos(2x)\right|</m> as a piecewise defined function. To do so, you'll need to find where <m>\sin(x) - \cos(2x) = 0</m>.)</p>
+        </assemblage>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>

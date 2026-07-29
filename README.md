@@ -6,18 +6,22 @@ Supplemental worksheets for the **Hands-On, Grades Up** (HOGU) program in MATH 1
 
 Each worksheet is an accessible HTML page. To get a printable version, use the print button built into the page.
 
-- [Session #11: Final Exam Review Part 1 &mdash; Chapters 6 &amp; 7](https://ecartee.github.io/math152-hogu-sp26/web2/session11wks.html)
-- [Session #12: Final Exam Review Part 2 &mdash; Chapters 10 &amp; 11](https://ecartee.github.io/math152-hogu-sp26/web2/session12wks.html)
+**[Browse all worksheets →](https://ecartee.github.io/math152-hogu-sp26/)**
+
+- [Session #1: The Substitution Rule &amp; Area Between Curves &mdash; Sections 5.5 &amp; 6.1](https://ecartee.github.io/math152-hogu-sp26/session1/)
+- [Session #11: Final Exam Review Part 1 &mdash; Chapters 6 &amp; 7](https://ecartee.github.io/math152-hogu-sp26/session11/)
+- [Session #12: Final Exam Review Part 2 &mdash; Chapters 10 &amp; 11](https://ecartee.github.io/math152-hogu-sp26/session12/)
+
+Sessions 2–10 are being converted from their original Word versions.
 
 ## Building locally
 
-This project uses [PreTeXt](https://pretextbook.org). With the PreTeXt CLI installed:
+This project uses [PreTeXt](https://pretextbook.org). Each worksheet is its own target, named `sessionN`:
 
 ```bash
-pretext build web2
+pretext build session1        # writes output/session1/
+pretext view session1         # build and serve with live reload
 ```
-
-Output is written to `output/web2/`.
 
 To install the PreTeXt CLI:
 ```bash
@@ -26,14 +30,22 @@ source .venv/pretext/bin/activate
 pip install pretext
 ```
 
+## Checking a worksheet
+
+```bash
+tools/audit.sh session1       # omit the argument to check every session
+```
+
+Reports any page whose content overflows the printed page, any image missing alt text, serif text in print preview, and image ink below WCAG contrast. Exits non-zero on failure.
+
 ## Deploying
 
 ```bash
-pretext deploy
+./deploy.sh
 ```
 
-This publishes the `web2` target to GitHub Pages.
+Builds every target listed in `project.ptx` and publishes to GitHub Pages: the landing page (`site/index.html`) at the site root, each worksheet at `/sessionN/`. To review the whole site without publishing, run `pretext deploy --stage-only` and serve `output/stage/`.
 
 ## Source
 
-Worksheet source files are in `source/` and written in [PreTeXt XML](https://pretextbook.org/documentation.html).
+Worksheet source files are in `source/` and written in [PreTeXt XML](https://pretextbook.org/documentation.html); shared images and CSS overrides are in `assets/`.

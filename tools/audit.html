@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+  Worksheet audit harness. Not part of the published site -- it is loaded by
+  tools/audit.sh in headless Chrome.
+
+  Why this exists: the things that break a worksheet (a page overflowing the
+  11in print boundary, a missing alt attribute, a Desmos curve label too faint
+  to pass WCAG) are all invisible in the normal scrollable view and awkward to
+  eyeball in print preview. This measures them.
+
+  It loads the worksheet, follows its own print-preview link (so nobody has to
+  know the fragile `?printpreview=sessionNwks-3` id), waits for MathJax and the
+  workspace-sizing JS to settle, then reports.
+-->
+<html lang="en">
+<head><meta charset="utf-8"><title>worksheet audit</title></head>
+<body>
+<iframe id="f" style="width:1100px;height:1400px;border:0"></iframe>
+<pre id="out">pending</pre>
+<script>
+const PAGE_H = 1056;          // 11in at 96dpi -- the print page boundary
+const SETTLE_MS = 9000;       // MathJax + workspace JS
+const target = new URLSearchParams(location.search).get('t');
+const f = document.getElementById('f');
+let followed = false;
+
+function lum(r, g, b) {
+  const c = v => { v /= 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+  return 0.2126 * c(r) + 0.7152 * c(g) + 0.0722 * c(b);
+}
+function ratioOf(l1, l2) {
+  return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+}
+
+function measure() {
+  const doc = f.contentDocument, win = f.contentWindow;
+  const cv = doc.createElement('canvas');
+  const cx = cv.getContext('2d', { willReadFrequently: true });
+  cv.width = cv.height = 1;
+  const toRGB = c => { cx.fillStyle = '#000'; cx.fillStyle = c; cx.fillRect(0, 0, 1, 1);
+                       const d = cx.getImageData(0, 0, 1, 1).data; return [d[0], d[1], d[2]]; };
+  const bgOf = e => {
+    let n = e;
+    while (n && n.nodeType === 1) {
+      const bg = win.getComputedStyle(n).backgroundColor;
+      if (bg && !/rgba\(0, 0, 0, 0\)|transparent/.test(bg)) return bg;
+      n = n.parentElement;
+    }
+    return 'rgb(255,255,255)';
+  };
+  const contrast = (fg, bg) => ratioOf(lum(...toRGB(fg)), lum(...toRGB(bg)));
+
+  // --- page fit: content must not cross the 11in boundary -------------------
+  // scrollHeight is useless here (overflow is visible), so take the lowest
+  // rendered edge of any laid-out descendant relative to the page top.
+  const pages = Array.from(doc.querySelectorAll('.onepage')).map((pg, i) => {
+    const top = pg.getBoundingClientRect().top;
+    let bottom = 0;
+    pg.querySelectorAll('*').forEach(el => {
+      if (el.offsetParent === null) return;              // hidden / not laid out
+      const b = el.getBoundingClientRect().bottom - top;
+      if (b > bottom) bottom = b;
+    });
+    return { page: i + 1, bottom: Math.round(bottom), limit: PAGE_H, over: bottom > PAGE_H + 1 };
+  });
+
+  // --- alt text ------------------------------------------------------------
+  const images = Array.from(doc.querySelectorAll('.onepage img')).map(im => ({
+    src: im.getAttribute('src').split('/').pop(),
+    alt: im.getAttribute('alt') || '',
+    missing: !(im.getAttribute('alt') || '').trim()
+  }));
+
+  // --- fonts + text contrast ----------------------------------------------
+  const text = {};
+  doc.querySelectorAll('.onepage *').forEach(el => {
+    if (!Array.from(el.childNodes).some(n => n.nodeType === 3 && n.textContent.trim())) return;
+    if (!el.offsetParent) return;
+    const cs = win.getComputedStyle(el);
+    const fam = cs.fontFamily;
+    const key = cs.color + '|' + bgOf(el) + '|' + fam;
+    if (text[key]) { text[key].n++; return; }
+    const px = parseFloat(cs.fontSize), wt = parseInt(cs.fontWeight) || 400;
+    const large = px >= 24 || (px >= 18.66 && wt >= 700);
+    const r = contrast(cs.color, bgOf(el));
+    text[key] = {
+      font: fam.split(',')[0].replace(/"/g, ''),
+      serif: /serif/i.test(fam) && !/sans-serif/i.test(fam),
+      size: cs.fontSize, ratio: +r.toFixed(2), need: large ? 3.0 : 4.5,
+      fail: r < (large ? 3.0 : 4.5),
+      sample: el.textContent.trim().slice(0, 28), n: 1
+    };
+  });
+
+  // --- ink inside images ---------------------------------------------------
+  // Desmos' default blue/green label colors sit near 3.2-3.8:1 on white and
+  // fail the 4.5:1 text threshold. Sample each image so that gets caught
+  // instead of eyeballed.
+  //
+  // Picking WHICH colors to judge matters. Naively taking the most common
+  // saturated colors judges the wrong thing: in a shaded-region graph the
+  // winner is the pale interior fill (~1.9:1), which is decorative -- the
+  // boundary carries the meaning -- so it reads as a failure when it isn't.
+  //
+  // Instead, group colors into families by dominant channel and judge the
+  // DARKEST reasonably-common member of each. A stroke or label's core pixels
+  // are the darkest of their hue; pale fills and antialiased edges are lighter
+  // variants, so they drop out on their own.
+  const ink = [];
+  const white = lum(255, 255, 255);
+  Array.from(doc.querySelectorAll('.onepage img')).forEach(im => {
+    if (!im.naturalWidth) return;
+    const c2 = doc.createElement('canvas');
+    c2.width = im.naturalWidth; c2.height = im.naturalHeight;
+    const x2 = c2.getContext('2d', { willReadFrequently: true });
+    x2.drawImage(im, 0, 0);
+    let data;
+    try { data = x2.getImageData(0, 0, c2.width, c2.height).data; } catch (e) { return; }
+
+    const buckets = {};
+    for (let i = 0; i < data.length; i += 4) {
+      const r = data[i], g = data[i + 1], b = data[i + 2], a = data[i + 3];
+      if (a < 200) continue;
+      if (Math.max(r, g, b) - Math.min(r, g, b) < 40) continue;   // skip greys/black/white
+      const k = (r >> 3 << 3) + ',' + (g >> 3 << 3) + ',' + (b >> 3 << 3);
+      buckets[k] = (buckets[k] || 0) + 1;
+    }
+    const floor = Math.max(100, 0.0004 * im.naturalWidth * im.naturalHeight);
+    const families = {};
+    Object.entries(buckets).forEach(([k, n]) => {
+      if (n < floor) return;                                       // antialiasing speckle
+      const [r, g, b] = k.split(',').map(Number);
+      const fam = r >= g && r >= b ? 'red' : (g >= b ? 'green' : 'blue');
+      const l = lum(r, g, b);
+      if (!families[fam] || l < families[fam].l) families[fam] = { k, n, l };
+    });
+    Object.entries(families).forEach(([fam, v]) => {
+      const rr = ratioOf(v.l, white);
+      // Below 4.5:1 fails by default. Strictly, WCAG lets a non-text graphic
+      // (a bare curve) sit at 3:1 -- but in these worksheets a colored curve
+      // almost always carries a label in the same color, and label text needs
+      // 4.5:1. Failing the 3-4.5 band keeps the Desmos defaults from shipping;
+      // the report says how to clear it when a color really is curve-only.
+      ink.push({
+        src: im.getAttribute('src').split('/').pop(),
+        family: fam, rgb: v.k, px: v.n, ratio: +rr.toFixed(2),
+        verdict: rr < 3.0 ? 'FAIL' : (rr < 4.5 ? 'FAIL_LABEL' : 'OK')
+      });
+    });
+  });
+
+  document.getElementById('out').textContent =
+    'RESULT ' + JSON.stringify({ pages, images, text: Object.values(text), ink });
+}
+
+f.addEventListener('load', () => {
+  if (!followed) {
+    // Follow the worksheet's own print-preview link.
+    const doc = f.contentDocument;
+    const link = doc.querySelector('a[href*="printpreview"]');
+    followed = true;
+    if (link) { f.src = link.href; return; }
+    document.getElementById('out').textContent = 'RESULT ' + JSON.stringify({ error: 'no printpreview link found' });
+    return;
+  }
+  setTimeout(measure, SETTLE_MS);
+});
+f.src = target;
+</script>
+</body>
+</html>
