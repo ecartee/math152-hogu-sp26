@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session6wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #6: Sequences &amp; Series -- Sections 11.1 &amp; 11.2</title>
+
+      <!-- PAGE 1: Warm-up problem 1 -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can in your own words. Feel free to discuss your thoughts about these questions with some peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <task workspace="1in">
+            <statement><p>What is the difference between a sequence and a series?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>What is a partial sum <m>s_n</m>? How does it relate to whether a series converges?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>If <m>\displaystyle\lim_{n\to\infty} a_n = 2</m>, what can we say about <m>\displaystyle\sum_{n=1}^{\infty} a_n</m>?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>If <m>\displaystyle\lim_{n\to\infty} a_n = 0</m>, what can we say about <m>\displaystyle\sum_{n=1}^{\infty} a_n</m>?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>If <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> converges, what can we say about <m>\displaystyle\lim_{n\to\infty} a_n</m>?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>A geometric series is a series of the form <m>\displaystyle\sum_{n=0}^{\infty} ar^n = a + ar + ar^2 + \cdots</m> Under what conditions does this series converge? If it converges, what does it converge to?</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Warm-up problems 2-3 -->
+      <page>
+        <exercise>
+          <introduction>
+            <p><alert>Directions: Fill in the blank with the words that make the statement true.</alert></p>
+          </introduction>
+          <task workspace="0.9in">
+            <statement><p>The sum of the first <m>n</m> terms of the series <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> is <m>s_n = a_1 + a_2 + \cdots + a_n = \dfrac{2n}{3n+5}</m>. Given this we know the series is <fillin characters="16"/> (choose convergent or divergent) and its sum is <fillin characters="16"/>.</p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p>The first four partial sums of the harmonic series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n}</m> are <m>s_1 = 1</m>, <m>s_2 =</m> <fillin characters="9"/>, <m>s_3 =</m> <fillin characters="9"/>.</p></statement>
+          </task>
+          <task workspace="1.6in">
+            <statement>
+              <p>Find the first six terms of the sequence defined below:</p>
+              <me>a_1 = 1,\ a_2 = 1,\ a_{n+2} = a_{n+1} + a_n \text{ for } n \geq 1</me>
+            </statement>
+          </task>
+        </exercise>
+
+        <exercise>
+          <introduction>
+            <p><alert>Directions: Answer T (true) or F (false) for each of the questions below.</alert></p>
+          </introduction>
+          <task workspace="0.9in">
+            <statement><p><fillin characters="7"/> If the limit of the terms of a series does not approach zero, then the series diverges.</p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><fillin characters="7"/> The series <m>\displaystyle\sum_{n=1}^{\infty} 2^{2n}\,3^{1-n}</m> is the geometric series <m>= \displaystyle\sum_{n=1}^{\infty} 4\left(\frac{4}{3}\right)^{n-1}</m>.</p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><fillin characters="7"/> The series <m>\displaystyle\sum_{n=1}^{\infty} 5\left(-\frac{2}{3}\right)^{n-1}</m> diverges.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Hands-on definitions box + problem 1 -->
+      <page>
+        <assemblage>
+          <title>Hands-on</title>
+          <p>
+            <ul>
+              <li><p>Definition of Monotonic: A sequence <m>a_n</m> is called increasing if <m>a_n \lt a_{n+1}</m> for all <m>n \geq 1</m>, that is <m>a_1 \lt a_2 \lt a_3 \lt \cdots</m>. It is called decreasing if <m>a_n \gt a_{n+1}</m> for all <m>n \geq 1</m>. It is called monotonic if it is either increasing or decreasing.</p></li>
+              <li><p>Definition Bounded Sequence: A sequence <m>a_n</m> is bounded above if there is a number <m>M</m> such that <m>a_n \leq M</m> for all <m>n \geq 1</m>. It is bounded below if there is a number <m>m</m> such that <m>m \leq a_n</m> for all <m>n \geq 1</m>. If it is bounded above and below, then <m>a_n</m> is a bounded sequence.</p></li>
+              <li><p>Monotonic Sequence Theorem: Every bounded monotonic sequence is convergent.</p></li>
+              <li><p>Squeeze Theorem for Sequences: If <m>a_n \leq b_n \leq c_n</m> for <m>n \geq n_0</m> and <m>\lim_{n\to\infty} a_n = \lim_{n\to\infty} c_n = L</m>, then <m>\lim_{n\to\infty} b_n = L</m>.</p></li>
+            </ul>
+          </p>
+        </assemblage>
+
+        <exercise number="1">
+          <introduction>
+            <p><alert>Directions: For each sequence below, determine whether it converges or diverges. If it converges, find the limit.</alert></p>
+          </introduction>
+          <task workspace="0.9in">
+            <statement><p><m>a_n = 4^n 9^{-n}</m></p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><m>a_n = \dfrac{2^n}{1 + 3^n}</m></p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><m>a_n = \cos^2(n)</m></p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><m>a_n = \dfrac{\cos^2(n)}{2^n}</m></p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><m>a_n = \cos\left(\dfrac{n\pi}{n+1}\right)</m></p></statement>
+          </task>
+          <task workspace="0.9in">
+            <statement><p><m>a_n = \arcsin\left(\dfrac{2n-1}{5-4n}\right)</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Hands-on problems 2-3 -->
+      <page>
+        <exercise number="2" workspace="3.7in">
+          <statement>
+            <p>The recursive sequence given below is bounded and increasing. Determine whether the sequence converges or diverges. If it converges, find the limit of the sequence.</p>
+            <me>a_1 = \sqrt{2}, \qquad a_{n+1} = \sqrt{2 + a_n}</me>
+          </statement>
+        </exercise>
+        <exercise number="3" workspace="3.7in">
+          <statement>
+            <p>Determine if the sequence <m>a_n = \dfrac{\ln(n+2)}{\ln(1+4n)}</m> converges or diverges for <m>n \geq 1</m>. If the sequence converges, find the limit.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Hands-on problem 4 (sequence properties table) -->
+      <page>
+        <exercise number="4">
+          <statement>
+            <p>For each of the following sequences, fill out the table below. The first two rows are filled out for you.</p>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+              <col width="40%" right="minor"/>
+              <col width="20%" right="minor"/>
+              <col width="18%" right="minor"/>
+              <col width="20%" right="minor"/>
+              <row bottom="minor">
+                <cell>Sequence</cell>
+                <cell>Monotonic?</cell>
+                <cell>Bounded?</cell>
+                <cell>Convergent?</cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \dfrac{1}{n}</m></p></cell>
+                <cell><p><alert>Yes</alert></p></cell>
+                <cell><p><alert>Yes</alert></p></cell>
+                <cell><p><alert>Yes</alert></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = (-1)^n</m></p></cell>
+                <cell><p><alert>No</alert></p></cell>
+                <cell><p><alert>Yes</alert></p></cell>
+                <cell><p><alert>No</alert></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \dfrac{(-1)^n}{n}</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = n(-1)^{n+1}</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \ln(n)</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \left|\sin(2n)\right|</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \dfrac{\cos(n\pi)}{(-2)^{n+1}}</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \dfrac{n + (-1)^n}{n}</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \dfrac{3 + n}{4 + n^2}</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \left(1 + \dfrac{1}{n}\right)^{n}</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>a_n = \ln(n+1) - 3\ln(n)</m></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+                <cell><p><nbsp/></p><p><nbsp/></p></cell>
+              </row>
+            </tabular>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Hands-on problems 5-6 -->
+      <page>
+        <exercise number="5" workspace="3.4in">
+          <statement>
+            <p>Given the series
+              <me>\sum_{n=1}^{\infty} \left(\frac{5}{2}\left(\frac{1}{2n-1} - \frac{1}{2n+1}\right)\right)</me>
+              write a formula for the partial sum <m>s_n</m>, then find what the series converges to.</p>
+            <p><em>Hint: It may help to write out the first few terms to see a pattern.</em></p>
+          </statement>
+        </exercise>
+        <exercise number="6" workspace="3.4in">
+          <statement>
+            <p>Given the series
+              <me>\sum_{n=1}^{\infty} \left(e^{1/n} - e^{1/(n+1)}\right)</me>
+              write a formula for the partial sum <m>s_n</m>, then find what the series converges to.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Hands-on problems 7-8 -->
+      <page>
+        <exercise number="7">
+          <introduction>
+            <p>It can be shown that
+              <me>\sum_{n=1}^{\infty} \frac{1}{n^4} = \frac{\pi^4}{90}</me>
+              Use this result to find the sums of the series:</p>
+          </introduction>
+          <task workspace="1.5in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \left(\frac{3}{n}\right)^4</m></p></statement>
+          </task>
+          <task workspace="1.5in">
+            <statement><p><m>\displaystyle\sum_{k=5}^{\infty} \frac{1}{(k-2)^4}</m></p></statement>
+          </task>
+        </exercise>
+        <exercise number="8">
+          <introduction>
+            <p>The series <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> has partial sums given by <m>s_n = \dfrac{n}{3n+1}</m>.</p>
+          </introduction>
+          <task workspace="1.7in">
+            <statement><p>Find a formula for <m>a_n</m></p></statement>
+          </task>
+          <task workspace="1.7in">
+            <statement><p>Determine if the series converges or diverges. If it converges, give the sum.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Hands-on problem 9 -->
+      <page>
+        <exercise number="9">
+          <introduction>
+            <p>Find the sum of each series given below.</p>
+          </introduction>
+          <task workspace="1.9in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{10} 6\left(\frac{2}{3}\right)^n</m></p></statement>
+          </task>
+          <task workspace="1.9in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \left(\frac{4}{3}\right)^{-(n+1)}</m></p></statement>
+          </task>
+          <task workspace="1.9in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{5}\left(\frac{5}{4}\right)^{n-1}</m></p></statement>
+          </task>
+          <task workspace="1.9in">
+            <statement><p><m>0.9 + 0.09 + 0.009 + 0.0009 + \cdots</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Hands-on problems 10-11 -->
+      <page>
+        <exercise number="10">
+          <introduction>
+            <p>Determine whether the series is convergent or divergent. If it is convergent, find its sum.</p>
+          </introduction>
+          <task workspace="1.9in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{4 + e^{-n}}</m></p></statement>
+          </task>
+          <task workspace="1.9in">
+            <statement><p><m>\displaystyle\sum_{k=1}^{\infty} \frac{k^2}{k^2 + 2k + 3}</m></p></statement>
+          </task>
+        </exercise>
+        <exercise number="11">
+          <introduction>
+            <p>Find the values of <m>x</m> for which the series converges:</p>
+          </introduction>
+          <task workspace="1.5in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} (-4)^n x^n</m></p></statement>
+          </task>
+          <task workspace="1.5in">
+            <statement><p><m>\displaystyle\sum_{n=1}^{\infty} (x + 3)^n</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Grades Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>Based on the Test for Divergence, what can be said about the convergence or divergence of the following series:</p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <p>I. <m>\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n n^2}{4n^2 - 5}</m></p>
+              <p>II. <m>\displaystyle\sum_{n=1}^{\infty} \frac{n}{e^n}</m></p>
+            </sidebyside>
+            <p>
+              <ol marker="(a)">
+                <li><p>I converges by the Test for Divergence and II diverges by the Test for Divergence.</p></li>
+                <li><p>I diverges by the Test for Divergence and II converges by the Test for Divergence.</p></li>
+                <li><p>I diverges by the Test for Divergence and II the Test for Divergence is inconclusive.</p></li>
+                <li><p>I the Test for Divergence is inconclusive and II diverges by the Test for Divergence.</p></li>
+                <li><p>None of these.</p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Given the sequence defined recursively by <m>a_1 = 2</m>, <m>\ a_{n+1} = 5 - \dfrac{4}{a_n}\ </m> is increasing and bounded, which statement is true about <m>\{a_n\}</m>?
+              <ol marker="(a)">
+                <li><p>The sequence diverges.</p></li>
+                <li><p>The sequence converges to <m>\dfrac{4}{5}</m>.</p></li>
+                <li><p>The sequence converges to <m>1</m>.</p></li>
+                <li><p>The sequence converges to <m>-4</m>.</p></li>
+                <li><p>None of the other statements are true.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11: Grades Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p><m>\displaystyle\sum_{n=1}^{\infty} \frac{3^n}{4^{n+1}} =</m>
+              <ol marker="(a)">
+                <li><p><m>1</m></p></li>
+                <li><p><m>0</m></p></li>
+                <li><p><m>\dfrac{3}{28}</m></p></li>
+                <li><p><m>4</m></p></li>
+                <li><p><m>\dfrac{3}{4}</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>The sequence <m>a_n = \dfrac{(-1)^n n}{2n^2 + 5}</m>
+              <ol marker="(a)">
+                <li><p>Converges to <m>-\dfrac{1}{2}</m>.</p></li>
+                <li><p>None of these.</p></li>
+                <li><p>Converges to <m>0</m>.</p></li>
+                <li><p>Diverges.</p></li>
+                <li><p>Converges to <m>\dfrac{1}{2}</m>.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 12: Challenge -->
+      <page>
+        <assemblage>
+          <title>Challenge</title>
+          <p>Find the limit of the sequence <m>\left\{\sqrt{2},\ \sqrt{\sqrt{2}},\ \sqrt{\sqrt{\sqrt{2}}},\ \ldots\right\}</m></p>
+        </assemblage>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>

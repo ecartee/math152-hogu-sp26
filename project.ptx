@@ -17,6 +17,30 @@
     <target name="session2" format="html" source="session2.ptx" deploy-dir="session2">
       <stringparams html.css.extra="external/custom.css"/>
     </target>
+    <target name="session3" format="html" source="session3.ptx" deploy-dir="session3">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session4" format="html" source="session4.ptx" deploy-dir="session4">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session5" format="html" source="session5.ptx" deploy-dir="session5">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session6" format="html" source="session6.ptx" deploy-dir="session6">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session7" format="html" source="session7.ptx" deploy-dir="session7">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session8" format="html" source="session8.ptx" deploy-dir="session8">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session9" format="html" source="session9.ptx" deploy-dir="session9">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
+    <target name="session10" format="html" source="session10.ptx" deploy-dir="session10">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
     <target name="session11" format="html" source="session11.ptx" deploy-dir="session11">
       <stringparams html.css.extra="external/custom.css"/>
     </target>

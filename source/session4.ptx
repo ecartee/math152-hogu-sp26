@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session4wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #4: Exam 1 Review -- Sections 5.5&#8211;7.2</title>
+
+      <!-- PAGE 1: Warm-up problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Exam 1 Review: Sections 5.5<ndash/>7.2, with extra focus on 7.1 (Integration by Parts) and 7.2 (Trigonometric Integrals). Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <statement>
+            <p>For each of the integrals below, label them as either: (A) best solved using <m>U</m>-substitution OR (B) best solved using integration by parts</p>
+            <p><nbsp/></p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <p><m>\displaystyle\int x\cos(5x)\,dx</m></p>
+              <p><m>\displaystyle\int (x + 4)\,e^{x}\,dx</m></p>
+            </sidebyside>
+            <p><nbsp/></p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <p><m>\displaystyle\int x\cos(x^2)\,dx</m></p>
+              <p><m>\displaystyle\int \frac{x}{(x+4)^2}\,dx</m></p>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><em>Hint:</em> You do not need to actually find the integrals for this problem, just state the method. In the end, you should find that 2 of the above are best solved using <m>U</m>-substitution, and 2 are best solved using integration by parts.</p>
+          </statement>
+        </exercise>
+
+        <exercise>
+          <introduction>
+            <sidebyside widths="58% 32%" margins="0% 10%" valign="middle">
+              <p>Consider the area bounded by <m>y = f(x)</m>, <m>\ y = 0</m>, <m>\ x = a</m>, and <m>x = b</m> (see the figure to the right):</p>
+              <image source="s4-curve-region.png">
+                <description>Graph of a curve labeled f of x lying above the x-axis between x equals a and x equals b, with dotted vertical segments connecting the ends of the curve down to the axis at a and b.</description>
+              </image>
+            </sidebyside>
+          </introduction>
+          <task workspace="0.4in">
+            <statement><p>If this area is rotated about the <m>x</m>-axis, then the volume of the resulting solid is: <m>V =</m> <fillin characters="22"/> <nbsp/> and this is known as the Method of <fillin characters="12"/></p></statement>
+          </task>
+          <task workspace="0.4in">
+            <statement><p>If this area is rotated about the <m>y</m>-axis, then the volume of the resulting solid is: <m>V =</m> <fillin characters="22"/> <nbsp/> and this is known as the Method of <fillin characters="12"/></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Warm-up problem 3 (zero or nonzero grid) -->
+      <page>
+        <exercise>
+          <statement>
+            <p><alert>Without actually computing any integrals</alert>, explain which of the following are either <alert>zero</alert> or <alert>nonzero</alert>:</p>
+            <p><nbsp/></p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <stack>
+                <p><m>\displaystyle\int_{0}^{2\pi} \sin(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+              <stack>
+                <p><m>\displaystyle\int_{0}^{\pi} \sin(2x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <stack>
+                <p><m>\displaystyle\int_{0}^{\pi} \sin(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+              <stack>
+                <p><m>\displaystyle\int_{-\pi}^{\pi} \cos(x)\sin(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <stack>
+                <p><m>\displaystyle\int_{0}^{2\pi} \sin^2(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+              <stack>
+                <p><m>\displaystyle\int_{-\pi}^{\pi} \sin^3(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+            </sidebyside>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+            <sidebyside widths="45% 45%" margins="5%">
+              <stack>
+                <p><m>\displaystyle\int_{-\pi/2}^{3\pi/4} \cos^2(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+              <stack>
+                <p><m>\displaystyle\int_{0}^{2\pi} \sin^6(x)\,dx</m></p>
+                <p>is ZERO or NON-ZERO (circle one)</p>
+              </stack>
+            </sidebyside>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Hands-On problem 1 -->
+      <page>
+        <assemblage>
+          <title>Let's get our hands on!</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <introduction>
+            <p>Compute the following integrals:</p>
+          </introduction>
+          <task workspace="2.2in">
+            <statement><p><m>\displaystyle\int (y + 4)\sin(y)\,dy =</m></p></statement>
+          </task>
+          <task workspace="2.2in">
+            <statement><p><m>\displaystyle\int_{\pi/2}^{3\pi/2} x\sin(x)\,dx =</m></p></statement>
+          </task>
+          <task workspace="2.2in">
+            <statement><p><m>\displaystyle\int t^2 \sin(t)\,dt =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Hands-On problem 2 -->
+      <page>
+        <exercise number="2">
+          <introduction>
+            <p>Compute the following integrals:</p>
+          </introduction>
+          <task workspace="3.7in">
+            <statement><p><m>\displaystyle\int e^{2x}\cos(x)\,dx =</m></p></statement>
+          </task>
+          <task workspace="3.7in">
+            <statement><p><m>\displaystyle\int x^2 \ln(x)\,dx =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Hands-On problem 3 -->
+      <page>
+        <exercise number="3">
+          <introduction>
+            <p>Evaluate the following definite integrals:</p>
+          </introduction>
+          <task workspace="2.2in">
+            <statement><p><m>\displaystyle\int_{0}^{3} \frac{x}{(x+5)^2}\,dx =</m></p></statement>
+          </task>
+          <task workspace="2.2in">
+            <statement><p><m>\displaystyle\int_{2}^{4} \frac{4x}{1+x^2}\,dx =</m></p></statement>
+          </task>
+          <task workspace="2.2in">
+            <statement><p><m>\displaystyle\int x\sqrt{x+4}\,dx =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Hands-On problem 4 -->
+      <page>
+        <exercise number="4" workspace="7in">
+          <statement>
+            <p>Set up and then evaluate the integral that finds the volume of the solid whose base is the ellipse <m>9x^2 + y^2 = 9</m> and whose cross-sections are squares perpendicular to the <m>y</m>-axis.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Hands-On problem 5 -->
+      <page>
+        <exercise number="5">
+          <introduction>
+            <p>Compute the following integrals:</p>
+          </introduction>
+          <task workspace="3.7in">
+            <statement><p><m>\displaystyle\int \sin^2(x)\,dx =</m></p></statement>
+          </task>
+          <task workspace="3.7in">
+            <statement><p><m>\displaystyle\int_{0}^{\pi} \sin^3(x)\,dx =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Hands-On problem 6 -->
+      <page>
+        <exercise number="6">
+          <introduction>
+            <p>Compute the following integrals:</p>
+          </introduction>
+          <task workspace="3.7in">
+            <statement><p><m>\displaystyle\int \sin(2x)\cos(x)\,dx =</m></p></statement>
+          </task>
+          <task workspace="3.7in">
+            <statement><p><m>\displaystyle\int \tan^3(x)\,dx =</m></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Hands-On problem 7 -->
+      <page>
+        <exercise number="7" workspace="7in">
+          <statement>
+            <p>Consider the region <m>R</m> bounded by the curves <m>y = 4 - x^2</m> and <m>y = x^2 + 2x</m> on the interval <m>-2 \leq x \leq 2</m>.</p>
+            <p>Set up, but do not solve, an integral that would find the area of the region <m>R</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Hands-On problems 8-9 -->
+      <page>
+        <exercise number="8" workspace="3.7in">
+          <statement>
+            <p>A cable weighing 2 pounds per foot is used to lift 100 pounds of coal up a mine shaft 100 feet deep. Find the total work done, in ft-lbs, in moving the coal 90 feet.</p>
+          </statement>
+        </exercise>
+        <exercise number="9" workspace="3.7in">
+          <statement>
+            <p>Suppose the <alert>work</alert> required to stretch a spring 4 meters beyond its natural length is 24 J. How much <alert>force</alert> would be required to hold the spring stretched 10 meters beyond its natural length?</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11: Grades Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>A cylindrical tank has a radius of 5 meters and a height of 9 meters. The tank is two-thirds full of a liquid. If <m>x</m> measures the distance from the bottom of the tank upward, which of the following integrals will find the amount of work required to pump all the liquid over the upper rim? Note: <m>\rho g</m> is the weight density of the liquid.</p>
+            <sidebyside widths="58% 30%" margins="0% 12%" valign="middle">
+              <p>
+                <ol marker="(a)">
+                  <li><p><m>\displaystyle \rho g \int_{0}^{6} 225\pi(9 - x)\,dx</m></p></li>
+                  <li><p><m>\displaystyle \rho g \int_{0}^{9} 25\pi x\,dx</m></p></li>
+                  <li><p><m>\displaystyle \rho g \int_{0}^{6} 25\pi(9 - x)\,dx</m></p></li>
+                  <li><p><m>\displaystyle \rho g \int_{0}^{6} 25\pi x\,dx</m></p></li>
+                  <li><p><m>\displaystyle \rho g \int_{0}^{9} 25\pi(9 - x)\,dx</m></p></li>
+                </ol>
+              </p>
+              <image source="s4-cylinder.jpg">
+                <description>Outline drawing of an upright circular cylinder.</description>
+              </image>
+            </sidebyside>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Which of the following correctly evaluates <m>\displaystyle\int_{2}^{3} x e^{4x}\,dx</m>?
+              <ol marker="(a)">
+                <li><p><m>\dfrac{11}{4}e^{12} - \dfrac{7}{4}e^{8}</m></p></li>
+                <li><p><m>\dfrac{11}{16}e^{12} - \dfrac{7}{16}e^{8}</m></p></li>
+                <li><p><m>\dfrac{11}{16}e^{3} - \dfrac{7}{16}e^{2}</m></p></li>
+                <li><p><m>\dfrac{11}{4}e^{6} - \dfrac{7}{4}e^{4}</m></p></li>
+                <li><p>None of the above.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 12: Grades Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p>Find the volume of the solid obtained by rotating the region bounded by <m>y = \sin x</m>, <m>\ y = \cos x</m>, <m>\ x = 0</m> and <m>x = \dfrac{\pi}{4}</m> about the <m>x</m>-axis. Hint: <m>\cos^2(x) - \sin^2(x) = \cos(2x)</m>.
+              <ol marker="(a)">
+                <li><p><m>\dfrac{\pi}{2}</m></p></li>
+                <li><p><m>1</m></p></li>
+                <li><p><m>\pi</m></p></li>
+                <li><p><m>-\dfrac{\pi}{2}</m></p></li>
+                <li><p><m>\dfrac{\pi^2}{4}</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>Using the method of cylindrical shells, which integral gives the volume of the solid obtained by rotating the region bounded by <m>y = x</m>, and <m>y = x^2</m>, about the line <m>y = 1</m>?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle 2\pi\int_{0}^{1} y\,(y - y^2)\,dy</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{1} (x - 1)(x - x^2)\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{1} (1 - y)\left(\sqrt{y} - y\right)dy</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{1} y\left(\sqrt{y} - y\right)dy</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{1} x\,(x - x^2)\,dx</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>
