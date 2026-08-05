@@ -9,10 +9,11 @@ Each worksheet is an accessible HTML page. To get a printable version, use the p
 **[Browse all worksheets →](https://ecartee.github.io/math152-hogu-sp26/)**
 
 - [Session #1: The Substitution Rule &amp; Area Between Curves &mdash; Sections 5.5 &amp; 6.1](https://ecartee.github.io/math152-hogu-sp26/session1/)
+- [Session #2: Area Between Curves &amp; Volumes &mdash; Sections 6.1 &amp; 6.2](https://ecartee.github.io/math152-hogu-sp26/session2/)
 - [Session #11: Final Exam Review Part 1 &mdash; Chapters 6 &amp; 7](https://ecartee.github.io/math152-hogu-sp26/session11/)
 - [Session #12: Final Exam Review Part 2 &mdash; Chapters 10 &amp; 11](https://ecartee.github.io/math152-hogu-sp26/session12/)
 
-Sessions 2–10 are being converted from their original Word versions.
+Sessions 3–10 are being converted from their original Word versions.
 
 ## Building locally
 

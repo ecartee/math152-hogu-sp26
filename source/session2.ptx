@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session2wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #2: Area Between Curves &amp; Volumes -- Sections 6.1 &amp; 6.2</title>
+
+      <!-- PAGE 1: Warm-up -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <introduction>
+            <p>Suppose you want to find the volume of a solid, <m>S</m>, where the base of the solid is the region bounded by <m>f(x) = x^2</m> and <m>g(x) = 4</m> and cross sections of <m>S</m> are squares that are perpendicular to the <m>x</m>-axis (see figures below).</p>
+            <sidebyside widths="42% 36%" margins="8%" valign="middle">
+              <image source="s2-square-slab.png">
+                <description>Three-dimensional view of the base region bounded by the parabola and the horizontal line, with two square cross-section slabs standing perpendicular to the x-axis. An enlarged copy of one slab to the side is labeled with base b, height h, and thickness dx.</description>
+              </image>
+              <image source="s2-square-slabs.png">
+                <description>The same three-dimensional view with many square cross-section slabs stacked side by side along the x-axis, filling out the solid.</description>
+              </image>
+            </sidebyside>
+          </introduction>
+          <task workspace="1in">
+            <statement><p>Should this problem be set up in terms of the variable <m>x</m> or <m>y</m>? Why?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>The formula for the area of a square is <m>bh</m>, where <m>b</m> is the base and <m>h</m> is the height. Find mathematical expressions for <m>b</m> and <m>h</m>.</p></statement>
+          </task>
+          <task workspace="1.2in">
+            <statement><p>To find the volume of <m>S</m> we need to sum up the areas of all the square cross sections, which means we need to set up a definite integral. Find the limits of integration of the definite integral that would find the volume of <m>S</m>.</p></statement>
+          </task>
+          <task workspace="1.2in">
+            <statement><p>Write the integral that would find the volume of <m>S</m>.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Hands-On problem 1 -->
+      <page>
+        <assemblage>
+          <title>Let's get our hands on!</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <introduction>
+            <p>Find the volume of the solid <m>S</m>, where the base of <m>S</m> is the region bounded by <m>y = x^2</m> and <m>y = 4</m> and</p>
+          </introduction>
+          <task workspace="2.5in">
+            <statement>
+              <p>The cross sections are equilateral triangles that are perpendicular to the <m>x</m>-axis (see figures below).</p>
+              <sidebyside widths="40% 40%" margins="10%" valign="middle">
+                <image source="s2-eqtri-slab.png">
+                  <description>Three-dimensional view of the base region bounded by the parabola and the horizontal line, with two equilateral-triangle cross sections standing perpendicular to the x-axis.</description>
+                </image>
+                <image source="s2-eqtri-slabs.png">
+                  <description>The same three-dimensional view with many equilateral-triangle cross sections stacked side by side along the x-axis, filling out the solid.</description>
+                </image>
+              </sidebyside>
+            </statement>
+          </task>
+          <task workspace="2.5in">
+            <statement><p>The cross sections are equilateral triangles that are perpendicular to the <m>y</m>-axis.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Hands-On problem 2 -->
+      <page>
+        <exercise number="2" workspace="5.5in">
+          <statement>
+            <p>Consider the solid <m>S</m> where the base of <m>S</m> is the triangular region with vertices <m>(0,0)</m>, <m>(2,0)</m>, and <m>(0,4)</m>. Set up (but do not evaluate) an integral that gives the volume of <m>S</m> if cross-sections perpendicular to the <m>y</m>-axis are isosceles right triangles (see figure below).</p>
+            <sidebyside width="55%" margins="0% 45%">
+              <image source="s2-isosceles-solid.png">
+                <description>Three-dimensional coordinate system with x, y, and z axes labeled, each running from negative 6 to 6. The triangular base region lies in the x-y plane, and one isosceles right triangle cross section stands perpendicular to the y-axis with its right angle marked where it meets the base.</description>
+              </image>
+            </sidebyside>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Hands-On problem 3 -->
+      <page>
+        <exercise number="3">
+          <introduction>
+            <p>Consider the region <m>R</m> bounded by <m>y = x^2</m> and <m>x = 2y</m> (see graph below). Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating <m>R</m> about the</p>
+            <sidebyside width="45%" margins="0% 55%">
+              <image source="s2-parabola-line.png">
+                <description>Graph of the upward-opening parabola y equals x squared and the line x equals 2 y. The curves intersect at the origin and at the point (one half, one fourth). The x-axis runs from negative 0.6 to 1 and the y-axis from negative 0.3 to 0.4.</description>
+              </image>
+            </sidebyside>
+          </introduction>
+          <task workspace="2.8in">
+            <statement><p><m>x</m>-axis.</p></statement>
+          </task>
+          <task workspace="2.8in">
+            <statement><p><m>y</m>-axis</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Hands-On problems 4-5 -->
+      <page>
+        <exercise number="4" workspace="3.7in">
+          <statement>
+            <p>Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating the region bounded by <m>y = \ln(x)</m>, <m>\ x = 0</m>, <m>\ y = 0</m>, and <m>y = 2</m> about the <m>y</m>-axis.</p>
+          </statement>
+        </exercise>
+        <exercise number="5" workspace="3.7in">
+          <statement>
+            <p>Find the volume of the solid obtained by revolving the region bounded by <m>y = x^2</m> and <m>y = 4</m> about the line <m>y = 4</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Hands-On problems 6-7 -->
+      <page>
+        <exercise number="6" workspace="3.7in">
+          <statement>
+            <p>Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating the region bounded by <m>y = e^x</m>, <m>\ y = 0</m>, <m>\ x = 0</m>, and <m>x = 3</m> about the line <m>x = 3</m>.</p>
+          </statement>
+        </exercise>
+        <exercise number="7" workspace="3.7in">
+          <statement>
+            <p>Consider the region bounded by <m>y = 10x - x^2</m> and <m>y = 0</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating about the line <m>x = -1</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Hands-On problems 8-9 -->
+      <page>
+        <exercise number="8" workspace="3.7in">
+          <statement>
+            <p>Consider the region <m>R</m> bounded by <m>y^2 = x</m>, <m>\ x = 0</m>, <m>\ y = 4</m>, and <m>y = 6</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating this region <m>R</m> about the line <m>y = 8</m>.</p>
+          </statement>
+        </exercise>
+        <exercise number="9" workspace="3.7in">
+          <statement>
+            <p>The integral below describes the volume of a solid. Describe the solid.</p>
+            <me>\pi \int_{0}^{\pi/2} \cos(x)\,dx</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Grades Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>The base of a solid, <m>S</m>, is the region in the first quadrant bounded by the graph of <m>y = 2 - x^2</m> and the coordinate axes <m>(y = 0, x = 0)</m>. The cross sections of <m>S</m> are squares that are perpendicular to the <m>y</m>-axis. Which of the following integrals correctly represents the volume of <m>S</m>?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle \pi\int_{0}^{2} (2 - y)^2\,dy</m></p></li>
+                <li><p><m>\displaystyle \int_{0}^{2} (2 - y)\,dy</m></p></li>
+                <li><p><m>\displaystyle \int_{0}^{\sqrt{2}} (2 - y)\,dy</m></p></li>
+                <li><p><m>\displaystyle \int_{0}^{\sqrt{2}} (2 - x^2)^2\,dx</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{\sqrt{2}} (2 - x)^2\,dx</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Consider the region bounded by <m>y = 10x - x^2</m> and <m>y = 0</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating this region about the <m>y</m>-axis. Which of the following integrals correctly represents the volume of the resulting solid?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle \pi\int_{0}^{10} (10x - x^2)^2\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{10} x\,(10x - x^2)\,dx</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{25} \left(10 \pm \frac{\sqrt{100 - 4y}}{2}\right)^{2}\,dy</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{4} y^2 - (10 - y)^2\,dy</m></p></li>
+                <li><p>None of the above.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Grades Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p>Consider the region <m>R</m> bounded by <m>y^2 = x</m>, <m>\ x = 0</m>, <m>\ y = 4</m>, and <m>y = 6</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating this region <m>R</m> about the <m>x</m>-axis.
+              <ol marker="(a)">
+                <li><p><m>\displaystyle \pi\int_{4}^{6} (y^3)^2\,dy</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{36} x^3\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{4}^{6} y^3\,dy</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{36} (36 - x)\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{36} y^3\,dy</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>The following integral describes the volume of a solid:
+              <me>\pi \int_{0}^{1} \left(y^4 - y^8\right)dy</me>
+              Which of the following correctly describes the solid?
+              <ol marker="(a)">
+                <li><p>A solid, <m>S</m>, formed by rotating the region bounded by <m>y = x^4</m> and <m>y = x^8</m> about the <m>x</m>-axis from <m>x = 0</m> to <m>x = 1</m>.</p></li>
+                <li><p>A solid, <m>S</m>, formed by rotating the region bounded by <m>x = y^2</m> and <m>x = y^4</m> about the <m>y</m>-axis from <m>y = 0</m> to <m>y = 1</m>.</p></li>
+                <li><p>A solid, <m>S</m>, formed by rotating the region bounded by <m>x = y^4</m> and <m>x = y^8</m> about the <m>y</m>-axis from <m>x = 0</m> to <m>x = 1</m>.</p></li>
+                <li><p>A solid, <m>S</m>, formed by rotating the region bounded by <m>y = x^2</m> and <m>y = x^4</m> about the <m>y</m>-axis from <m>y = 0</m> to <m>y = 1</m>.</p></li>
+                <li><p>A solid, <m>S</m>, formed by rotating the region bounded by <m>x = y^2</m> and <m>x = y^4</m> about the <m>x</m>-axis from <m>x = 0</m> to <m>x = 1</m>.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Challenge -->
+      <page>
+        <assemblage>
+          <title>Challenge</title>
+          <p>The following integral describes the volume of a solid:</p>
+          <p>
+            <me>\pi \int_{0}^{1} \left(y^4 - y^8\right)dy</me>
+          </p>
+          <p>Describe the solid.</p>
+        </assemblage>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>
