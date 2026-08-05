@@ -12,10 +12,11 @@ Each worksheet is an accessible HTML page. To get a printable version, use the p
 - [Session #2: Area Between Curves &amp; Volumes &mdash; Sections 6.1 &amp; 6.2](https://ecartee.github.io/math152-hogu-sp26/session2/)
 - [Session #3: Volumes, Cylindrical Shells &amp; Work &mdash; Sections 6.2, 6.3 &amp; 6.4](https://ecartee.github.io/math152-hogu-sp26/session3/)
 - [Session #4: Exam 1 Review &mdash; Sections 5.5&ndash;7.2](https://ecartee.github.io/math152-hogu-sp26/session4/)
+- [Session #5: Trig Substitution, Partial Fractions &amp; Improper Integrals &mdash; Sections 7.3, 7.4 &amp; 7.8](https://ecartee.github.io/math152-hogu-sp26/session5/)
 - [Session #11: Final Exam Review Part 1 &mdash; Chapters 6 &amp; 7](https://ecartee.github.io/math152-hogu-sp26/session11/)
 - [Session #12: Final Exam Review Part 2 &mdash; Chapters 10 &amp; 11](https://ecartee.github.io/math152-hogu-sp26/session12/)
 
-Sessions 5–10 are being converted from their original Word versions.
+Sessions 6–10 are being converted from their original Word versions.
 
 ## Building locally
 

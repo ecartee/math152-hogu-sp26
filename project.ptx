@@ -23,6 +23,9 @@
     <target name="session4" format="html" source="session4.ptx" deploy-dir="session4">
       <stringparams html.css.extra="external/custom.css"/>
     </target>
+    <target name="session5" format="html" source="session5.ptx" deploy-dir="session5">
+      <stringparams html.css.extra="external/custom.css"/>
+    </target>
     <target name="session11" format="html" source="session11.ptx" deploy-dir="session11">
       <stringparams html.css.extra="external/custom.css"/>
     </target>
