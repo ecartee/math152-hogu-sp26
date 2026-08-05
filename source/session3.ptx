@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session3wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #3: Volumes, Cylindrical Shells &amp; Work -- Sections 6.2, 6.3 &amp; 6.4</title>
+
+      <!-- PAGE 1: Warm-up. Identical to Session 2's warm-up in the Word
+           originals, figures included — the s2-* images are byte-identical to
+           the ones embedded in M152_hogu3.docx, so they are reused here
+           rather than duplicated under an s3- name. -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <introduction>
+            <p>Suppose you want to find the volume of a solid, <m>S</m>, where the base of the solid is the region bounded by <m>f(x) = x^2</m> and <m>g(x) = 4</m> and cross sections of <m>S</m> are squares that are perpendicular to the <m>x</m>-axis (see figures below).</p>
+            <sidebyside widths="42% 36%" margins="8%" valign="middle">
+              <image source="s2-square-slab.png">
+                <description>Three-dimensional view of the base region bounded by the parabola and the horizontal line, with two square cross-section slabs standing perpendicular to the x-axis. An enlarged copy of one slab to the side is labeled with base b, height h, and thickness dx.</description>
+              </image>
+              <image source="s2-square-slabs.png">
+                <description>The same three-dimensional view with many square cross-section slabs stacked side by side along the x-axis, filling out the solid.</description>
+              </image>
+            </sidebyside>
+          </introduction>
+          <task workspace="1in">
+            <statement><p>Should this problem be set up in terms of the variable <m>x</m> or <m>y</m>? Why?</p></statement>
+          </task>
+          <task workspace="1in">
+            <statement><p>The formula for the area of a square is <m>bh</m>, where <m>b</m> is the base and <m>h</m> is the height. Find mathematical expressions for <m>b</m> and <m>h</m>.</p></statement>
+          </task>
+          <task workspace="1.2in">
+            <statement><p>To find the volume of <m>S</m> we need to sum up the areas of all the square cross sections, which means we need to set up a definite integral. Find the limits of integration of the definite integral that would find the volume of <m>S</m>.</p></statement>
+          </task>
+          <task workspace="1.2in">
+            <statement><p>Write the integral that would find the volume of <m>S</m>.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Hands-On problem 1 -->
+      <page>
+        <assemblage>
+          <title>Let's get our hands on!</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <introduction>
+            <p>Set up (but do not evaluate) an integral that gives the volume of the solid <m>S</m>, where the base of <m>S</m> is the region bounded by <m>y = x^2</m> and <m>y = 4</m> and</p>
+          </introduction>
+          <task workspace="2.5in">
+            <statement>
+              <p>The cross sections are equilateral triangles that are perpendicular to the <m>x</m>-axis (see figures below).</p>
+              <sidebyside widths="40% 40%" margins="10%" valign="middle">
+                <image source="s2-eqtri-slab.png">
+                  <description>Three-dimensional view of the base region bounded by the parabola and the horizontal line, with two equilateral-triangle cross sections standing perpendicular to the x-axis.</description>
+                </image>
+                <image source="s2-eqtri-slabs.png">
+                  <description>The same three-dimensional view with many equilateral-triangle cross sections stacked side by side along the x-axis, filling out the solid.</description>
+                </image>
+              </sidebyside>
+            </statement>
+          </task>
+          <task workspace="2.5in">
+            <statement><p>The cross sections are equilateral triangles that are perpendicular to the <m>y</m>-axis.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Hands-On problems 2-3 -->
+      <page>
+        <exercise number="2" workspace="3.7in">
+          <statement>
+            <p>Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating the region bounded by <m>y = \ln(x)</m>, <m>\ x = 0</m>, <m>\ y = 0</m>, and <m>y = 2</m> about the <m>y</m>-axis.</p>
+          </statement>
+        </exercise>
+        <exercise number="3" workspace="3.7in">
+          <statement>
+            <p>Set up (but do not evaluate) an integral that gives the volume of the solid obtained by revolving the region bounded by <m>y = x^2</m> and <m>y = 4</m> about the line <m>y = 4</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Hands-On problems 4-5 -->
+      <page>
+        <exercise number="4" workspace="3.7in">
+          <statement>
+            <p>Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating the region bounded by <m>y = e^x</m>, <m>\ y = 0</m>, <m>\ x = 0</m>, and <m>x = 3</m> about the line <m>x = 3</m>.</p>
+          </statement>
+        </exercise>
+        <exercise number="5" workspace="3.7in">
+          <statement>
+            <p>Consider the region bounded by <m>y = 9 - x^2</m> and <m>y = 0</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating about the line <m>x = -3</m>.</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Hands-On problem 6 (shells vs washers) -->
+      <page>
+        <exercise number="6">
+          <introduction>
+            <p>Consider the region <m>R</m> bounded by <m>y = \sqrt{x}</m>, <m>\ y = 0</m>, and <m>x = 4</m>. If the region is revolved about the line <m>y = -2</m>,</p>
+          </introduction>
+          <task workspace="3in">
+            <statement><p>Set up the integral that gives the volume using the method of shells. <alert>You do not need to evaluate your integral.</alert></p></statement>
+          </task>
+          <task workspace="3in">
+            <statement><p>Set up the integral that gives the volume using the method of washers. <alert>You do not need to evaluate your integral.</alert></p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Hands-On problems 7-8 -->
+      <page>
+        <exercise number="7" workspace="3.7in">
+          <statement>
+            <p>Consider the region <m>R</m> bounded by <m>y^2 = x</m>, <m>\ x = 0</m>, <m>\ y = 4</m>, and <m>y = 6</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating this region <m>R</m> about the line <m>y = 8</m>.</p>
+          </statement>
+        </exercise>
+        <exercise number="8" workspace="3.7in">
+          <statement>
+            <p>The integral below describes the volume of a solid. Describe the solid.</p>
+            <me>\pi \int_{0}^{\pi/2} \cos^2(x)\,dx</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Hands-On problem 9 (two ropes) -->
+      <page>
+        <exercise number="9" workspace="7in">
+          <statement>
+            <p>Two 10-foot-long ropes, A and B, hang vertically from a tall building. Rope A is 10 feet long, weighs 15 pounds, and has a 50-pound weight attached to the end. Rope B is also 10 feet long, but weighs 50 pounds, and has a 15-pound weight attached to the end. How much work is done in lifting each rope (with weight attached) to the top of the building?</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Hands-On problem 10 (spring) -->
+      <page>
+        <exercise number="10">
+          <introduction>
+            <p>A force of 80 Newtons is required to hold a spring that has been stretched from its natural length of 1 meter to a length of 3 meters.</p>
+          </introduction>
+          <task workspace="3in">
+            <statement><p>What is the spring constant?</p></statement>
+          </task>
+          <task workspace="3.5in">
+            <statement><p>Find the work required to stretch this spring from a length of 3 meters to a length of 4 meters.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Hands-On problem 11 (cone tank) -->
+      <page>
+        <exercise number="11" workspace="7in">
+          <statement>
+            <p>A tank is in the shape of an inverted cone with radius of 3 feet and height of 10 feet. Assuming it is full of water, set up an integral (but do not solve) that gives the work it takes to pump the water through a 2-foot-tall spout located at the top of the tank. Use <m>\rho g = 62.5</m> pounds per cubic foot. <alert>Clearly indicate where you are placing the axis and which direction is positive.</alert></p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Grades Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>The base of a solid, <m>S</m>, is the region in the first quadrant bounded by the graph of <m>y = 2 - x^2</m> and the coordinate axes <m>(y = 0, x = 0)</m>. The cross sections of <m>S</m> are squares that are perpendicular to the <m>y</m>-axis. Which of the following integrals correctly represents the volume of <m>S</m>?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle \pi\int_{0}^{2} (2 - y)^2\,dy</m></p></li>
+                <li><p><m>\displaystyle \int_{0}^{2} (2 - y)\,dy</m></p></li>
+                <li><p><m>\displaystyle \int_{0}^{\sqrt{2}} (2 - y)\,dy</m></p></li>
+                <li><p><m>\displaystyle \int_{0}^{\sqrt{2}} (2 - x^2)^2\,dx</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{\sqrt{2}} (2 - x)^2\,dx</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>Consider the region bounded by <m>y = 10x - x^2</m> and <m>y = 0</m>. Set up (but do not evaluate) an integral that gives the volume of the solid obtained by rotating this region about the <m>y</m>-axis. Which of the following integrals correctly represents the volume of the resulting solid?
+              <ol marker="(a)">
+                <li><p><m>\displaystyle \pi\int_{0}^{10} (10x - x^2)^2\,dx</m></p></li>
+                <li><p><m>\displaystyle 2\pi\int_{0}^{10} x\,(10x - x^2)\,dx</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{25} \left(10 \pm \frac{\sqrt{100 - 4y}}{2}\right)^{2}\,dy</m></p></li>
+                <li><p><m>\displaystyle \pi\int_{0}^{4} y^2 - (10 - y)^2\,dy</m></p></li>
+                <li><p>None of the above.</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11: Grades Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p>Find the volume of the solid found by rotating the region bounded by the curves <m>y = x^3</m>, <m>\ x = 1</m>, and <m>y = 0</m> about the <m>y</m>-axis.
+              <ol marker="(a)">
+                <li><p><m>\dfrac{\pi}{2}</m></p></li>
+                <li><p><m>\dfrac{2\pi}{5}</m></p></li>
+                <li><p><m>\dfrac{\pi}{10}</m></p></li>
+                <li><p><m>\dfrac{6\pi}{7}</m></p></li>
+                <li><p><m>\dfrac{\pi}{4}</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>A 20 foot rope that weighs 120 pounds is hanging over a cliff. Find the work required to pull 10ft of the rope to the top of the cliff.
+              <ol marker="(a)">
+                <li><p>1200 ft-lb</p></li>
+                <li><p>300 ft-lb</p></li>
+                <li><p>600 ft-lb</p></li>
+                <li><p>1500 ft-lb</p></li>
+                <li><p>900 ft-lb</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 12: Challenge -->
+      <page>
+        <assemblage>
+          <title>Challenge</title>
+          <p>A spherical tank of radius 6 meters is partially full of water, has a small outlet pipe at the top of the sphere, and water is pumped out through this outlet. The tank is only filled to a depth of 8 meters from the bottom.</p>
+          <p>Find the work required to pump all the water out of the tank. <alert>Clearly indicate where you are placing the axis and which direction is positive.</alert></p>
+          <p>In metric units, the density of water <m>\rho</m> multiplied by the gravitational constant <m>g</m> is <m>\rho g = 9800\,\dfrac{\text{N}}{\text{m}^3}</m></p>
+        </assemblage>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>
