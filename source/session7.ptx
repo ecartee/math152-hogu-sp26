@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="MLCLOGO.png" url="https://mlc.tamu.edu/"/>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="session7wks">
+    <title>MATH 152 Hands-On, Grades Up</title>
+    <introduction>
+      <p>
+        For workspace between exercises, print this worksheet or download to your device by clicking the printer icon.
+      </p>
+    </introduction>
+
+    <worksheet>
+      <title>Session #7: Exam 2 Review -- Sections 7.3&#8211;11.3</title>
+
+      <!-- PAGE 1: Warm-up problem 1 (harmonic series rectangles) -->
+      <page>
+        <assemblage>
+          <title>Warm-Up</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise>
+          <introduction>
+            <sidebyside widths="52% 42%" margins="0% 6%" valign="top">
+              <p>Every series can be depicted graphically, such as the one on the right:</p>
+              <image source="s7-harmonic-rects.png">
+                <description>Bar graph of rectangles of width 1 sitting on the x-axis from x equals 1 to x equals 6. The rectangle heights step down: 1 over the interval from 1 to 2, one half from 2 to 3, one third from 3 to 4, then one fourth and one fifth. The y-axis marks 1, one half, one third, and one fifth.</description>
+              </image>
+            </sidebyside>
+          </introduction>
+          <task workspace="1.6in">
+            <statement>
+              <p>Write down a sum that gives the area of the shaded region.</p>
+              <p>How does this relate to the series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n}</m> ?</p>
+            </statement>
+          </task>
+          <task workspace="1.6in">
+            <statement>
+              <p>Sketch the function <m>f(x) = \dfrac{1}{x}</m> on the axes to the right.</p>
+              <p>How does <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n}</m> compare to <m>\displaystyle\int_{1}^{\infty} \frac{1}{x}\,dx</m> ?</p>
+            </statement>
+          </task>
+          <task workspace="1.6in">
+            <statement>
+              <p>Does <m>\displaystyle\int_{1}^{\infty} \frac{1}{x}\,dx</m> converge or diverge? What can you conclude about <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n}</m> ?</p>
+            </statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 2: Warm-up problem 2 (1/n^2 rectangles) -->
+      <page>
+        <exercise>
+          <introduction>
+            <sidebyside widths="52% 42%" margins="0% 6%" valign="top">
+              <p>We can use a similar argument to show that an infinite series converges:</p>
+              <image source="s7-invsquare-rects.png">
+                <description>Bar graph of rectangles of width 1 sitting on the x-axis from x equals 1 to just past x equals 6. The rectangle heights step down quickly: 1 over the interval from 1 to 2, one fourth from 2 to 3, one ninth from 3 to 4, then smaller and smaller. The y-axis marks 1, one half, one fourth, and one ninth.</description>
+              </image>
+            </sidebyside>
+          </introduction>
+          <task workspace="1.8in">
+            <statement>
+              <p>Write down a sum that gives the area of the shaded region. How does this relate to the series <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}</m> ?</p>
+            </statement>
+          </task>
+          <task workspace="1.8in">
+            <statement>
+              <p>Sketch the function <m>f(x) = \dfrac{1}{x^2}</m> on the graph to the right. How does <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}</m> compare to <m>\displaystyle\int_{1}^{\infty} \frac{1}{x^2}\,dx</m> ?</p>
+            </statement>
+          </task>
+          <task workspace="1.8in">
+            <statement>
+              <p>Does <m>\displaystyle\int_{1}^{\infty} \frac{1}{x^2}\,dx</m> converge or diverge? What can you conclude about <m>\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}</m> ?</p>
+            </statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 3: Hands-on problem 1 -->
+      <page>
+        <assemblage>
+          <title>Hands-on</title>
+          <p>Answer each of the following as best you can. Feel free to discuss your thoughts with peers around you.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <introduction>
+            <p>Suppose we want to evaluate the infinite sum <m>\displaystyle\sum_{n=1}^{\infty} \frac{5}{4n^2 - 1}\ </m> (not just whether it converges)</p>
+          </introduction>
+          <task workspace="2.4in">
+            <statement><p>Find the partial fraction decomposition (including coefficients) for <m>\dfrac{5}{4n^2 - 1}</m></p></statement>
+          </task>
+          <task workspace="2.4in">
+            <statement><p>Use your answer from part (a) to write a formula for <m>s_n</m>, the <m>n</m>-th partial sum of the series.</p></statement>
+          </task>
+          <task workspace="2.4in">
+            <statement><p>Use your answer from part (b) to evaluate the infinite sum.</p></statement>
+          </task>
+        </exercise>
+      </page>
+
+      <!-- PAGE 4: Hands-on problems 2-3 -->
+      <page>
+        <exercise number="2" workspace="4in">
+          <statement>
+            <p>Evaluate the following improper integral, or show that it diverges:</p>
+            <me>\int_{-\infty}^{0} x e^{2x}\,dx</me>
+          </statement>
+        </exercise>
+        <exercise number="3" workspace="3.4in">
+          <statement>
+            <p>Compute the integral</p>
+            <me>\int \frac{x^2}{(9 - x^2)^{3/2}}\,dx</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 5: Hands-on problem 4 -->
+      <page>
+        <exercise number="4" workspace="7in">
+          <statement>
+            <p>Evaluate the following improper integral, or show that it diverges:</p>
+            <me>\int_{2}^{\infty} \left(\frac{7}{7x+2} - \frac{4}{4x+1}\right) dx</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 6: Hands-on problem 5 -->
+      <page>
+        <exercise number="5" workspace="7in">
+          <statement>
+            <p>Compute the integral</p>
+            <me>\int \frac{1}{\sqrt{x^2 + 4x}}\,dx</me>
+            <p>(<em>Hint</em>: you may want to complete the square in the denominator)</p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 7: Hands-on problem 6 -->
+      <page>
+        <exercise number="6" workspace="7in">
+          <statement>
+            <p>Compute the integral</p>
+            <me>\int \frac{3x^3 + 6x + 9}{x^4 + 3x^2}\,dx</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 8: Hands-on problem 7 -->
+      <page>
+        <exercise number="7" workspace="7in">
+          <statement>
+            <p>Determine whether the series below converges or diverges:</p>
+            <me>\sum_{n=2}^{\infty} \frac{1}{n(\ln(n))^3}</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 9: Hands-on problem 8 -->
+      <page>
+        <exercise number="8" workspace="7in">
+          <statement>
+            <p>Compute</p>
+            <me>\int \frac{\sec^4(x)}{\tan(x)}\,dx</me>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 10: Grades Up! problems 1-2 -->
+      <page>
+        <assemblage>
+          <title>Grades Up!</title>
+          <p>Choose the best answer for each of the following.</p>
+        </assemblage>
+
+        <exercise number="1">
+          <statement>
+            <p>Which of the following is the partial fraction decomposition of
+              <me>\frac{1}{(x^2 - 1)(x - 1)(x^2 + 1)}</me>
+              <ol marker="(a)">
+                <li><p><m>\dfrac{A}{x+1} + \dfrac{B}{x-1} + \dfrac{C}{(x-1)^2} + \dfrac{Dx + E}{x^2 + 1}</m></p></li>
+                <li><p><m>\dfrac{A}{x+1} + \dfrac{B}{(x+1)^2} + \dfrac{C}{x-1} + \dfrac{Dx + E}{x^2 + 1}</m></p></li>
+                <li><p><m>\dfrac{A}{x+1} + \dfrac{B}{x-1} + \dfrac{C}{x+1} + \dfrac{Dx + E}{x^2 + 1}</m></p></li>
+                <li><p><m>\dfrac{Ax + B}{x^2 - 1} + \dfrac{C}{x-1} + \dfrac{Dx + E}{x^2 + 1}</m></p></li>
+                <li><p>None of these</p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="2">
+          <statement>
+            <p>The integral
+              <me>\int_{-1}^{2} \frac{dx}{x^2}</me>
+              <ol marker="(a)">
+                <li><p>Diverges to <m>-\infty</m></p></li>
+                <li><p>Diverges to <m>\infty</m></p></li>
+                <li><p>Converges to <m>2</m></p></li>
+                <li><p>Converges to <m>\dfrac{1}{2}</m></p></li>
+                <li><p>Converges to <m>\ln(4)</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 11: Grades Up! problems 3-4 -->
+      <page>
+        <exercise number="3">
+          <statement>
+            <p><m>\displaystyle\int \sin^3(x)\cos^2(x)\,dx =</m>
+              <ol marker="(a)">
+                <li><p><m>\dfrac{1}{3}\cos^3(x) + \dfrac{1}{5}\cos^5(x) + C</m></p></li>
+                <li><p><m>-\dfrac{1}{3}\cos^3(x) - \dfrac{1}{4}\cos^4(x) + C</m></p></li>
+                <li><p><m>-\dfrac{1}{3}\cos^3(x) - \dfrac{1}{5}\cos^5(x) + C</m></p></li>
+                <li><p><m>-\dfrac{1}{3}\cos^3(x) + \dfrac{1}{5}\cos^5(x) + C</m></p></li>
+                <li><p><m>\left(\dfrac{1}{4}\sin^4(x)\right)\left(\dfrac{1}{3}\cos^3(x)\right) + C</m></p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="4">
+          <statement>
+            <p>Evaluate the integral
+              <me>\int_{2}^{3} \frac{1}{x^2 - 1}\,dx</me>
+              <ol marker="(a)">
+                <li><p><m>\ln(8)</m></p></li>
+                <li><p><m>\ln\left(\dfrac{\sqrt{6}}{2}\right)</m></p></li>
+                <li><p><m>\ln\left(2\sqrt{6}\right)</m></p></li>
+                <li><p><m>\ln\left(\dfrac{8}{3}\right)</m></p></li>
+                <li><p>None of these</p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+      <!-- PAGE 12: Grades Up! problems 5-6 -->
+      <page>
+        <exercise number="5">
+          <statement>
+            <p>Find the sum of the series
+              <me>\sum_{n=1}^{\infty} \frac{2^{n+1}}{(-5)^n}</me>
+              <ol marker="(a)">
+                <li><p><m>-\dfrac{4}{3}</m></p></li>
+                <li><p><m>-\dfrac{4}{7}</m></p></li>
+                <li><p><m>\dfrac{5}{7}</m></p></li>
+                <li><p><m>\dfrac{2}{7}</m></p></li>
+                <li><p>The series diverges.</p></li>
+              </ol>
+            </p>
+            <p><nbsp/></p>
+            <p><nbsp/></p>
+          </statement>
+        </exercise>
+
+        <exercise number="6">
+          <statement>
+            <p>Evaluate the following integral: <m>\displaystyle\int_{2}^{4} \frac{x^2 + 1}{x - 1}\,dx</m>
+              <ol marker="(a)">
+                <li><p><m>4</m></p></li>
+                <li><p><m>4 + 2\ln(3)</m></p></li>
+                <li><p><m>6 + \ln(3)</m></p></li>
+                <li><p><m>2 + 2\ln(3)</m></p></li>
+                <li><p><m>8 + 2\ln(3)</m></p></li>
+              </ol>
+            </p>
+          </statement>
+        </exercise>
+      </page>
+
+    </worksheet>
+  </article>
+
+</pretext>

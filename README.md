@@ -14,10 +14,11 @@ Each worksheet is an accessible HTML page. To get a printable version, use the p
 - [Session #4: Exam 1 Review &mdash; Sections 5.5&ndash;7.2](https://ecartee.github.io/math152-hogu-sp26/session4/)
 - [Session #5: Trig Substitution, Partial Fractions &amp; Improper Integrals &mdash; Sections 7.3, 7.4 &amp; 7.8](https://ecartee.github.io/math152-hogu-sp26/session5/)
 - [Session #6: Sequences &amp; Series &mdash; Sections 11.1 &amp; 11.2](https://ecartee.github.io/math152-hogu-sp26/session6/)
+- [Session #7: Exam 2 Review &mdash; Sections 7.3&ndash;11.3](https://ecartee.github.io/math152-hogu-sp26/session7/)
 - [Session #11: Final Exam Review Part 1 &mdash; Chapters 6 &amp; 7](https://ecartee.github.io/math152-hogu-sp26/session11/)
 - [Session #12: Final Exam Review Part 2 &mdash; Chapters 10 &amp; 11](https://ecartee.github.io/math152-hogu-sp26/session12/)
 
-Sessions 7–10 are being converted from their original Word versions.
+Sessions 8–10 are being converted from their original Word versions.
 
 ## Building locally
 
